@@ -1,0 +1,156 @@
+{% include 'header-main.njk' %}
+
+<main class="main">
+  <section class="hero hero--layout section-offset">
+    <div class="container">
+      <a href="/projects/" class="back-link hero__back-link"><svg class="back-link__icon"
+          width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_26_2872)">
+            <rect width="32" height="32" rx="5" fill="#1F1F1F" />
+            <path
+              d="M22.8307 15.2411H11.7603L15.7776 11.2238L14.7044 10.1506L8.85498 16L14.7044 21.8495L15.7776 20.7763L11.7603 16.759H22.8307V15.2411Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_26_2872">
+              <rect width="32" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        назад к макетам
+      </a>
+      <div class="hero__content grid">
+        <div class="hero__info">
+          <h1 class="hero__subtitle">{{ title }}</h1>
+          <div class="hero__badges">
+            {% for item in levels %}
+              <a class="badge badge--gray">
+                {{ item | changeTextInRussian }}
+              </a>
+            {% endfor %}
+            {% for item in props %}
+              <a class="badge badge--gray">
+                {{item}}
+              </a>
+            {% endfor %}
+          </div>
+          <div class="hero__links">
+            {% if figmaLink %}
+              <a href="{{ figmaLink }}" target="_blank" class="hero__link">
+                <svg width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_43_173)">
+                    <rect width="24" height="24" rx="5" fill="#1F1F1F" />
+                    <path
+                      d="M9.6002 19.2001C10.9262 19.2001 12.0002 18.1261 12.0002 16.8001V14.4001H9.6002C8.2742 14.4001 7.2002 15.4741 7.2002 16.8001C7.2002 18.1261 8.2742 19.2001 9.6002 19.2001Z"
+                      fill="#0ACF83" />
+                    <path
+                      d="M7.2002 12.0001C7.2002 10.6741 8.2742 9.6001 9.6002 9.6001H12.0002V14.4001H9.6002C8.2742 14.4001 7.2002 13.3261 7.2002 12.0001Z"
+                      fill="#A259FF" />
+                    <path
+                      d="M7.2002 7.20005C7.2002 5.87405 8.2742 4.80005 9.6002 4.80005H12.0002V9.60005H9.6002C8.2742 9.60005 7.2002 8.52605 7.2002 7.20005Z"
+                      fill="#F24E1E" />
+                    <path
+                      d="M12 4.80005H14.4C15.726 4.80005 16.8 5.87405 16.8 7.20005C16.8 8.52605 15.726 9.60005 14.4 9.60005H12V4.80005Z"
+                      fill="#FF7262" />
+                    <path
+                      d="M16.8 12.0001C16.8 13.3261 15.726 14.4001 14.4 14.4001C13.074 14.4001 12 13.3261 12 12.0001C12 10.6741 13.074 9.6001 14.4 9.6001C15.726 9.6001 16.8 10.6741 16.8 12.0001Z"
+                      fill="#1ABCFE" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_43_173">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="hero__link-text">Ссылка на макет</span>
+              </a>
+            {% endif %}
+            {% if previewLink %}
+              <a href="{{ previewLink }}" target="_blank" class="hero__link">
+                <svg
+                  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_43_166)">
+                    <rect width="24" height="24" rx="5" fill="#1F1F1F" />
+                    <path
+                      d="M17.3539 6H7.01545C6.30274 6 5.72314 6.5796 5.72314 7.29231V16.3385C5.72314 17.0512 6.30274 17.6308 7.01545 17.6308H17.3539C18.0666 17.6308 18.6462 17.0512 18.6462 16.3385V7.29231C18.6462 6.5796 18.0666 6 17.3539 6ZM15.4155 7.93846H16.7078V9.23077H15.4155V7.93846ZM13.477 7.93846H14.7693V9.23077H13.477V7.93846ZM7.01545 16.3385V10.5231H17.3546L17.3552 16.3385H7.01545Z"
+                      fill="#F9EC0E" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_43_166">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="hero__link-text">Live-превью</span>
+              </a>
+            {% endif %}
+            <a href="{{ telegramLink }}" target="_blank" class="hero__link">
+              <svg
+                width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_43_158)">
+                  <rect width="24" height="24" rx="5" fill="#1F1F1F" />
+                  <g clip-path="url(#clip1_43_158)">
+                    <path
+                      d="M16.0987 7.82912C16.0987 7.82912 17.1613 7.4029 17.0727 8.43798C17.0432 8.86415 16.7776 10.3558 16.571 11.9693L15.8625 16.7488C15.8625 16.7488 15.8035 17.449 15.2722 17.5708C14.7408 17.6925 13.9438 17.1446 13.7962 17.0228C13.6782 16.9315 11.5824 15.5616 10.8444 14.8918C10.6378 14.7092 10.4017 14.3439 10.874 13.9177L13.9734 10.8734C14.3276 10.5081 14.6818 9.6557 13.2059 10.6907L9.07336 13.5828C9.07336 13.5828 8.60107 13.8872 7.71557 13.6132L5.79689 13.0044C5.79689 13.0044 5.08846 12.5478 6.29867 12.0911C9.25051 10.6603 12.8812 9.19901 16.0987 7.82912Z"
+                      fill="#F9EC0E" />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_43_158">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                  <clipPath id="clip1_43_158">
+                    <rect width="18.4615" height="18.4615" fill="white" transform="translate(2.95361 2.58472)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="hero__link-text">Сообщество</span>
+            </a>
+          </div>
+          {% if skills %}
+            <div class="layout-content">
+              <h2 class="layout-content__caption">Изучаемые навыки:</h2>
+              <ul class="list-reset layout-content__list">
+                {% for item in skills %}
+                  <li class="layout-content__list-item">{{ item }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          {% if articles %}
+            <div class="layout-content">
+              <h2 class="layout-content__caption">Полезные материалы:</h2>
+              <ul class="list-reset layout-content__articles">
+                {% for item in articles %}
+                  <li class="layout-content__articles-item">
+                    <article class="layout-content__article">
+                      <h3 class="layout-content__subtitle">
+                        <a href="{{ item.link }}" target="_blank"
+                          class="layout-content__subtitle-link">
+                          {{ item.text }}
+                        </a>
+                      </h3>
+                      <span class="badge layout-content__badge">Перейти</span>
+                    </article>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          {% if easyText %}
+            <div class="layout-content">
+              <h2 class="layout-content__caption">Макет слишком легкий?</h2>
+              <p class="layout-content__descr">{{ easyText }}</p>
+            </div>
+          {% endif %}
+        </div>
+        <div class="hero__meta">
+          <img loading="lazy" src="{{ page.url }}{{ image }}" srcset="{{ page.url }}{{ image2x }} 2x"
+              class="image" width="356" height="552" alt="Макет сайта {{ title }}">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}

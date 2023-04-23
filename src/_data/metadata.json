@@ -1,0 +1,13 @@
+{
+  "title": "Верстаем.онлайн - прокачай свой навык верстки!",
+  "url": "https://verstaem.online/",
+  "email": "maxgraph23@gmail.com",
+  "telegram": "https://t.me/verstaem_online",
+  "description": "Макеты в Figma, задачки по html и css для прокачки верстки",
+  "feed": {
+    "subtitle": "Макеты в Figma, задачки по html и css для прокачки верстки",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://verstaem.online/"
+  }
+}

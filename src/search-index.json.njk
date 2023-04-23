@@ -1,0 +1,17 @@
+---
+permalink: '/search-feed.json'
+---
+{
+  "posts": [
+    {% for item in collections.blog %}
+      {
+        "title": "{{ item.data.title }}",
+        "date": "{{ item.data.date }}",
+        "author": "{{ item.data.author }}",
+        "url": "{{ item.url }}",
+        "category": "{{ item.data.categories[0] }}",
+        "cover": "{{ item.data.cover }}"
+      }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

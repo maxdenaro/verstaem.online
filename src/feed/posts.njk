@@ -1,0 +1,29 @@
+---
+title: Верстаем.онлайн - прокачай свой навык верстки!
+description: Макеты в Figma, задачки по html и css для прокачки верстки
+language: ru
+url: https://verstaem.online
+domain: https://verstaem.online
+permalink: "{{ metadata.feed.path }}"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ title }}</title>
+  <subtitle>{{ description }}</subtitle>
+  <link href="{{ metadata.url }}" rel="self" />
+  <link href="{{ metadata.url }}" />
+  <id>{{ metadata.feed.id }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.blog | reverse %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ domain }}{{ post.url }}"/>
+    <updated>{{ post.date }}</updated>
+    <id>{{ domain }}{{ post.url }}</id>
+    <content type="html">{{ post.templateContent}}</content>
+  </entry>
+  {%- endfor %}
+</feed>

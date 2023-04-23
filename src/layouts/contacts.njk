@@ -1,0 +1,38 @@
+{% include 'header.njk' %}
+
+<main class="main">
+  <section class="hero hero--contacts">
+    <div class="container">
+      <h1 class="hero__title">{{ title }}</h1>
+    </div>
+  </section>
+  <section class="contacts section-offset">
+    <div class="container grid">
+      <div class="col">
+        <h2 class="contacts__title">Обратная связь</h2>
+        <p class="contacts__descr">Любые отзывы и предложения пишите через форму ниже.</p>
+        <form action="#" class="form contacts__form">
+          <div class="form__item"><input type="text" name="name" class="form__field form__field--name"
+              placeholder="Имя"></div>
+          <div class="form__item"><input type="email" name="email" class="form__field form__field--email"
+              placeholder="E-mail"></div>
+          <div class="form__item"><input type="text" name="subject" class="form__field form__field--subject"
+              placeholder="Тема обращения"></div>
+          <div class="form__item"><textarea name="message" class="form__textarea form__field--message"
+              placeholder="Сообщение"></textarea></div><button class="btn-reset btn form__btn">Отправить</button>
+          <p class="form__success">Форма успешно отправлена. Спасибо!</p>
+        </form>
+      </div>
+      <div class="col">
+        <div class="contacts__item"><a href="mailto:maxgraph23@gmail.com" class="contacts__link">maxgraph23@gmail.com</a>
+          <p class="contacts__text">Напишите нам, если хотите стать экспертом верстаем.онлайн</p>
+        </div>
+        <div class="contacts__item"><a href="{{ metadata.telegram }}" target="_blank" class="contacts__link">t.me/verstaem_online</a>
+          <p class="contacts__text">Вступайте в телеграм-сообщество</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}

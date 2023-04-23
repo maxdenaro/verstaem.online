@@ -1,0 +1,104 @@
+{% include 'header.njk' %}
+
+<main class="main">
+  <section class="hero hero--layouts section-offset">
+    <div class="container">
+      <h1 class="hero__title">Библиотека макетов</h1>
+    </div>
+  </section>
+  <section class="how section-offset" style="display: none;">
+    <div class="container grid">
+      <div class="col">
+        <h2 class="title how__title">Как начать?</h2>
+      </div>
+      <div class="col">
+        <ul class="list-reset how__list">
+          <li class="how__item">
+            <h3 class="how__subtitle">1. Выбери один из проектов ниже</h3>
+          </li>
+          <li class="how__item">
+            <h3 class="how__subtitle">2. Сверстай макет от начала до конца</h3>
+          </li>
+          <li class="how__item">
+            <h3 class="how__subtitle">3. Проверь себя по live-превью или отправь в чат</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="layouts-page-list section-offset">
+    {% set pagUrl = page.url %}
+    <div class="container">
+      <h2 class="layouts-page-list__title visually-hidden">Макеты для практики</h2>
+      <ul class="list-reset layouts-page-list__nav">
+        <li class="layouts-page-list__item">
+          <a href="/projects/" class="layouts-page-list__link {% if "/projects/" == pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Показать все
+          </a>
+        </li>
+        {% for tag, val in collections.levelsList -%}
+          <li class="layouts-page-list__item">
+            <a href="/projects/{{tag}}/" class="layouts-page-list__link {% if tag in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+              {{ tag | changeTextInRussian }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% if "/projects/" == pagUrl %}
+        <ul class="list-reset layouts-page-list__list grid">
+          {% for post in collections.projects -%}
+            <li class="layouts-page-list__item">
+              <article class="layouts-page-card">
+                <div class="layouts-page-card__image">
+                  <div class="layouts-page-card__badges">
+                    {% for item in post.data.levels %}
+                      <a href="/projects/{{ item }}" class="badge">
+                        {{ item | changeTextInRussian }}
+                      </a>
+                    {% endfor %}
+                    {% for item in post.data.props %}
+                      <a class="badge badge--gray">
+                        {{ item }}
+                      </a>
+                    {% endfor %}
+                  </div>
+                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
+                </div>
+                <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
+                <p class="layouts-page-card__descr">{{ post.data.description }}</p>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <ul class="list-reset layouts-page-list__list grid">
+          {% for post in collections.levelsList[tag] -%}
+            <li class="layouts-page-list__item">
+              <article class="layouts-page-card">
+                <div class="layouts-page-card__image">
+                  <div class="layouts-page-card__badges">
+                    {% for item in post.data.levels %}
+                      <a href="/projects/{{ item }}" class="badge">
+                        {{ item | changeTextInRussian }}
+                      </a>
+                    {% endfor %}
+                    {% for item in post.data.props %}
+                      <a class="badge badge--gray">
+                        {{ item }}
+                      </a>
+                    {% endfor %}
+                  </div>
+                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
+                </div>
+                <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
+                <p class="layouts-page-card__descr">{{ post.data.description }}</p>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}

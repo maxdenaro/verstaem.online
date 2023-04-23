@@ -1,0 +1,28 @@
+{
+  "private": "true",
+  "name": "blog-11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "eleventy-plugin-reading-time": "^0.0.1",
+    "jsdom": "^16.5.1",
+    "moment-timezone": "^0.5.33",
+    "picomatch": "^2.2.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "editorconfig-checker": "^3.3.0",
+    "html-minifier": "^4.0.0",
+    "node-w3c-validator": "^2.0.1"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "code": "editorconfig-checker",
+    "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
+    "build": "eleventy"
+  },
+  "author": "max.denaro",
+  "license": "ISC"
+}

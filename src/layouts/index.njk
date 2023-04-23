@@ -1,0 +1,137 @@
+{% include 'header-main.njk' %}
+
+  <main class="main">
+    <section class="hero hero--main section-offset">
+      <div class="container">
+        <h1 class="hero__title">{{ title }}</h1>
+      </div>
+    </section>
+    <section class="about section-offset">
+      <div class="container grid">
+        <div class="col">
+          <h2 class="title about__title">О нашем проекте</h2>
+        </div>
+        <div class="col">
+          <p class="about__big-descr">Верстаем.онлайн — проект от верстальщиков верстальщикам.</p>
+          <p class="about__descr">Здесь вы найдете макеты различной сложности, их живое превью, полезные статьи
+            и материалы на тему верстки, а также практические задачи, которые развивают те или иные навыки точечно.
+          </p>
+          <p class="about__descr">Развивайся вместе с нами!</p>
+          <ul class="list-reset about__list">
+            <li class="about__item">
+              <h3 class="about__subtitle">Макеты разной сложности</h3>
+              <p class="about__subdescr">Улучшай свой навык верстки с помощью практики на макетах</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__subtitle">Практические задачи</h3>
+              <p class="about__subdescr">Прокачай определенные навыки, проходя наши практические задачи</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__subtitle">Вступай в сообщество</h3>
+              <p class="about__subdescr">Переходи в наше сообщество в телеграме — общайся, развивайся, ищи помощь</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__subtitle">Становись экспертом</h3>
+              <p class="about__subdescr">Если у какого-то макета еще нет live-превью — пришли свой вариант и стань
+                экспертом</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="layouts-main section-offset">
+      <div class="container grid">
+        <div class="col">
+          <div class="layouts-main__top">
+            <h2 class="title layouts-main__title">Последние макеты</h2>
+            <a href="/projects/" class="link">Посмотреть все</a>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="list-reset layouts-main__list">
+            {% for project in collections.projects %}
+              {% if (loop.index <= 2) %}
+                <li class="layouts-main__item">
+                  <article class="layouts-main-card">
+                    <div class="layouts-main-card__text">
+                      <h3 class="layouts-main-card__title"><a href="{{ project.url }}" class="layouts-main-card__link">{{ project.data.title }}</a></h3>
+                      <p class="layouts-main-card__descr">{{ project.data.description }}</p>
+                      <div class="layouts-main-card__badges">
+                        {% for item in project.data.levels %}
+                          <a href="/projects/{{ item }}" class="badge">
+                            {{ item | changeTextInRussian }}
+                          </a>
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <div class="layouts-main-card__image">
+                      <img loading="lazy" src="{{project.url}}{{ project.data.mainPageImage }}" srcset="{{project.url}}{{ project.data.mainPageImage2x }} 2x"
+                          class="image" width="300" height="550" alt="{{ project.data.title }}">
+                    </div>
+                  </article>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="last-articles section-offset">
+      <div class="container grid">
+        <div class="col">
+          <div class="last-articles__top">
+            <h2 class="title last-articles__title">Последние статьи</h2>
+            <a href="/blog/" class="link">Посмотреть все</a>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="list-reset last-articles__list">
+            {% for post in collections.blog %}
+              {% if (loop.index <= 5) %}
+                <li class="last-articles__item">
+                  <article class="last-articles-card">
+                    <h3 class="last-articles-card__title">
+                      <a href="{{ post.url }}" class="last-articles-card__link">{{ post.data.title }}</a>
+                    </h3>
+                    {% for item in post.data.categories %}
+                      <a href="/blog/{{ item}}" class="badge last-articles-card__badge">{{ item | changeTextInRussian }}</a>
+                    {% endfor %}
+                    <svg class="last-articles-card__icon">
+                      <use xlink:href="/assets/img/sprite.svg#arrow-1"></use>
+                    </svg>
+                  </article>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="faq section-offset" id="faq">
+      <div class="container grid">
+        <div class="col">
+          <h2 class="title faq__title">FAQ</h2>
+        </div>
+        <div class="col">
+          <ul class="list-reset faq__list">
+            {% for item in faq %}
+              <li class="faq__item accordion">
+                <button class="btn-reset accordion__control" aria-expanded="false">
+                  <span class="accordion__title">{{ item.title }}</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  <p>{{ item.description }}</p>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="big-btn section-offset">
+      <div class="container"><a href="/projects/" class="btn btn--big">Прокачать верстку</a></div>
+    </div>
+  </main>
+
+{% include 'footer-main.njk' %}

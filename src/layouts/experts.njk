@@ -1,0 +1,28 @@
+{% include 'header.njk' %}
+
+<main class="main">
+  <section class="hero hero--experts">
+    <div class="container">
+      <h1 class="hero__title">Наши эксперты</h1>
+      <p class="hero__text">Отличные верстальщики, разработчики проекта и просто хорошие люди!</p>
+    </div>
+  </section>
+  <section class="experts-content section-offset">
+    <div class="container">
+      <h2 class="title visually-hidden">Эксперты сайта</h2>
+      <ul class="list-reset experts-content__list grid">
+        {% for item in collections.experts -%}
+          <li class="experts-content__item">
+            <div class="experts-content__image">
+              <img loading="lazy" src="{{ item.url }}{{ item.data.image }}" class="image" width="560" height="600" alt="{{ item.data.name }}">
+            </div>
+            <div class="experts-content__name">{{ item.data.name }}</div>
+            <p class="experts-content__descr">{{ item.data.descr }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}

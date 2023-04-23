@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#1f1f1f">
+  <title>{{ metadata.title }}</title>
+  <!-- поменять -->
+  <meta name="yandex-verification" content="7eb47f5c5203f925" />
+  <meta name="google-site-verification" content="-uWw0R36BWQVvCnV1ky36uuO0w-v-sTRZrxno-o-PxQ" />
+  <link rel="preload" href="/assets/fonts/NextArtBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="description" content="{{ metadata.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ metadata.title }}">
+  <meta property="og:site_name" content="{{ metadata.description }}">
+  <meta property="og:url" content="{{ metadata.url }}">
+  <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ metadata.title }}">
+  <meta name="twitter:description" content="{{ metadata.description }}">
+  <meta name="twitter:site" content="{{ metadata.url }}">
+  <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script defer="defer" src="/assets/js/main.js"></script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(93328072, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93328072" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="logo">верстаем.онлайн</a>
+        {% include 'nav.njk' %}
+        <a href="/projects/" class="btn header__btn">Прокачать верстку</a>
+      </div>
+    </header>

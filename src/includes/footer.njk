@@ -1,0 +1,20 @@
+    <footer class="footer">
+      <div class="container grid">
+        <div class="col col--footer"><a href="/" class="logo">верстаем.онлайн</a></div>
+        <div class="col col--footer">
+          {% include 'nav-footer.njk' %}
+        </div>
+        <div class="col col--footer"><a href="{{ metadata.telegram }}" class="btn">Сообщество в Telegram</a></div>
+        <div class="col col--footer">
+          <div class="footer__rights">© <span class="year">2023</span> Все права защищены</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const year = new Date().getFullYear();
+    document.querySelector('.year').textContent = year;
+  </script>
+</body>
+
+</html>

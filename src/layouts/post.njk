@@ -1,0 +1,47 @@
+{% include 'header-post.njk' %}
+
+<main class="main">
+  <div class="post-content section-offset">
+    <div class="container"><a href="/blog/" class="back-link hero__back-link"><svg class="back-link__icon"
+          width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_26_2872)">
+            <rect width="32" height="32" rx="5" fill="#1F1F1F" />
+            <path
+              d="M22.8307 15.2411H11.7603L15.7776 11.2238L14.7044 10.1506L8.85498 16L14.7044 21.8495L15.7776 20.7763L11.7603 16.759H22.8307V15.2411Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_26_2872">
+              <rect width="32" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg> назад к статьям</a>
+      <div class="post-content__inner grid">
+        <article class="post">
+          <div class="post__top">
+            <h1 class="post__title">{{ title }}</h1>
+            <div class="post__meta">
+              <a class="post__category badge badge--gray">Как это сделать?</a>
+              <time class="post__date" datetime="{{ date }}">{{ date | dateformat }}</time>
+              <div class="post__author">Автор: {{ author }}</div>
+            </div>
+          </div>
+          <div class="post__content">
+            {{ content | safe }}
+          </div>
+        </article>
+        <aside class="post-aside">
+          <div class="post-info">
+            <h2 class="post-info__title">Содержание:</h2>
+            <ul class="list-reset post-info__list">
+            </ul>
+            <div class="post-info__links">
+              <a href="#" class="btn post-info__btn" data-social="vk">Поделиться в Вконтакте</a>
+              <a href="https://github.com/maxdenaro/verstaem.online/blob/main/src/blog/{{ page.fileSlug }}/index.md" class="btn post-info__btn">Редактировать на GitHub</a></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include 'footer.njk' %}
