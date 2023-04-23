@@ -3,4 +3,8 @@ permalink: /.htaccess
 eleventyExcludeFromCollections: true
 ---
 
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 ErrorDocument 404 /404/
