@@ -1,19 +1,12 @@
-{% include 'header.njk' %}
+{% include 'header-404.njk' %}
 
 <main class="main">
-  <section class="not-found">
-    <div class="container not-found__container">
-      <h1 class="visually-hidden">Страница не найдена</h1>
-      <div class="not-found__left">
-        <div class="not-found__symbol">404</div>
-        <p class="not-found__descr">
-          далеко не каждому удаётся оказаться здесь. но вы настоящий счастливчик!
-        </p>
-        <p class="not-found__descr">ловите файл с кучей полезного!</p>
-        <a href="{{ metadata.gift }}" download class="not-found__download">Скачать</a>
-        <a href="/" class="not-found__download">На главную</a>
-      </div>
-      <img src="/assets/img/not-found.svg" class="not-found__image" aria-hidden="true" alt="">
+  <section class="not-found-section">
+    <div class="container">
+      <h1 class="not-found-section__title visually-hidden">Страница не найдена</h1>
+      <div class="not-found-section__text">404</div>
+      <div class="not-found-section__descr">Вы попали не туда! Но не страшно, можно вернуться на <a
+          href="/">главную</a></div>
     </div>
   </section>
 </main>
