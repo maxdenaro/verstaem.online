@@ -38,7 +38,7 @@ try {
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('maxgraph23@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('maxgraph23@gmail.com', 'Заявка с verstaem.online'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('maxgraph23@gmail.com');
