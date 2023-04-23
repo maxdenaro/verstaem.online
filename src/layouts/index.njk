@@ -49,7 +49,7 @@
         </div>
         <div class="col">
           <ul class="list-reset layouts-main__list">
-            {% for project in collections.projects %}
+            {% for project in collections.projects | reverse %}
               {% if (loop.index <= 2) %}
                 <li class="layouts-main__item">
                   <article class="layouts-main-card">
