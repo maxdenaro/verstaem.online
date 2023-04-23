@@ -19,4 +19,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd app && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . m71516@hostru04.fornex.org:/home/m71516/public_html/verstaem.online
+      - run: cd app && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . m71516@hostru14.fornex.host:/home/m71516/public_html/verstaem.online
