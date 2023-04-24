@@ -1,4 +1,5 @@
 ---
+date: 2023-04-22
 title: "Ujjo"
 description: "Лендинг рекламы острых соусов"
 cover: "img/cover.jpg"

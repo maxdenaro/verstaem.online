@@ -1,4 +1,5 @@
 ---
+date: 2023-04-24
 title: "Multi Cinema"
 description: "Сайт с фильмами"
 cover: "img/cover.jpg"

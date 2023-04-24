@@ -1,4 +1,5 @@
 ---
+date: 2023-04-24
 title: "Coca"
 description: "Сайт компании по поддержке диджитал-бизнеса"
 cover: "img/cover.jpg"

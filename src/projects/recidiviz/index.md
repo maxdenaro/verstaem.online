@@ -1,4 +1,5 @@
 ---
+date: 2023-04-21
 title: "Recidiviz"
 description: "Лендинг для системы помощи правосудию"
 cover: "img/cover.jpg"

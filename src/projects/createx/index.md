@@ -1,4 +1,5 @@
 ---
+date: 2023-04-20
 title: "Createx"
 description: "Архитектурное бюро"
 cover: "img/cover.jpg"

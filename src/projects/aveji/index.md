@@ -1,4 +1,5 @@
 ---
+date: 2023-04-23
 title: "Aveji"
 description: "Лендинг компании, продающей мебель"
 cover: "img/cover.jpg"
