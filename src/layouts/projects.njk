@@ -36,13 +36,21 @@
             Показать все
           </a>
         </li>
-        {% for tag, val in collections.levelsList -%}
-          <li class="layouts-page-list__item">
-            <a href="/projects/{{tag}}/" class="layouts-page-list__link {% if tag in pagUrl %} layouts-page-list__link--active {% endif %}  ">
-              {{ tag | changeTextInRussian }}
-            </a>
-          </li>
-        {% endfor %}
+        <li class="layouts-page-list__item">
+          <a href="/projects/easy/" class="layouts-page-list__link {% if "easy" in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Легкий
+          </a>
+        </li>
+        <li class="layouts-page-list__item">
+          <a href="/projects/normal/" class="layouts-page-list__link {% if "normal" in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Средний
+          </a>
+        </li>
+        <li class="layouts-page-list__item">
+          <a href="/projects/hard/" class="layouts-page-list__link {% if "hard" in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Сложный
+          </a>
+        </li>
       </ul>
       {% if "/projects/" == pagUrl %}
         <ul class="list-reset layouts-page-list__list grid">

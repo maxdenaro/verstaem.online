@@ -102,18 +102,6 @@ module.exports = function(eleventyConfig) {
     console.log(asd);
   });
 
-  eleventyConfig.addFilter('categoryFilter', function(collection, category) {
-    if (!category) return false;
-      const filtered = collection.filter(item => item.data.cat == category)
-      return filtered;
-  });
-
-  eleventyConfig.addFilter('filterLastArticles', (array) => {
-    let lastElement = [];
-    lastElement.push(array[array.length - 1]);
-    return lastElement;
-  });
-
   return {
     addPassthroughFileCopy: true,
     markdownTemplateEngine: "njk",
