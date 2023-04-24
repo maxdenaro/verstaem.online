@@ -1,3 +1,12 @@
+---
+numberOfLatestPostsToShow: 3
+---
+
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+
+{% set postslist = collections.projects | head(-1 * numberOfLatestPostsToShow) %}
+
 {% include 'header-main.njk' %}
 
   <main class="main">
@@ -49,7 +58,8 @@
         </div>
         <div class="col">
           <ul class="list-reset layouts-main__list">
-            {% for project in collections.projects | reverse %}
+
+            {% for project in postslist | reverse %}
               {% if (loop.index <= 2) %}
                 <li class="layouts-main__item">
                   <article class="layouts-main-card">
