@@ -46,7 +46,7 @@
       </ul>
       {% if "/projects/" == pagUrl %}
         <ul class="list-reset layouts-page-list__list grid">
-          {% for post in collections.projects -%}
+          {% for post in collections.projects | reverse -%}
             <li class="layouts-page-list__item">
               <article class="layouts-page-card">
                 <div class="layouts-page-card__image">
@@ -72,7 +72,7 @@
         </ul>
       {% else %}
         <ul class="list-reset layouts-page-list__list grid">
-          {% for post in collections.levelsList[tag] -%}
+          {% for post in collections.levelsList[tag] | reverse -%}
             <li class="layouts-page-list__item">
               <article class="layouts-page-card">
                 <div class="layouts-page-card__image">
