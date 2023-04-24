@@ -7,24 +7,24 @@
   <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#1f1f1f">
-  <title>{{ title }} | {{ metadata.title }}</title>
   <meta name="yandex-verification" content="7eb47f5c5203f925" />
   <meta name="google-site-verification" content="-uWw0R36BWQVvCnV1ky36uuO0w-v-sTRZrxno-o-PxQ" />
   <link rel="preload" href="/assets/fonts/NextArtBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <meta name="description" content="{{ metadata.description }}">
+  <title>Макет {{ title }} | {{ metadata.title }}</title>
+  <meta name="description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ metadata.title }}">
-  <meta property="og:site_name" content="{{ metadata.description }}">
-  <meta property="og:url" content="{{ metadata.url }}">
-  <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  <meta property="og:title" content="Макет {{ title }} | Верстаем.онлайн">
+  <meta property="og:site_name" content="{{ description }}">
+  <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ metadata.url }}{{ page.url }}img/social-cover.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ metadata.title }}">
-  <meta name="twitter:description" content="{{ metadata.description }}">
-  <meta name="twitter:site" content="{{ metadata.url }}">
-  <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  <meta name="twitter:title" content="Макет {{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:site" content="{{ metadata.url }}{{ page.url }}">
+  <meta name="twitter:image" content="{{ metadata.url }}{{ page.url }}img/social-cover.jpg">
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script defer="defer" src="/assets/js/main.js"></script>

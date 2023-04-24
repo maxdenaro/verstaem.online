@@ -1,4 +1,4 @@
 ---
-title: "Макеты"
+title: "Библиотека макетов"
 layout: "projects.njk"
 ---
