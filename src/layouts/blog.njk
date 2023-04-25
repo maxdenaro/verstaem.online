@@ -33,7 +33,7 @@
       <div class="blog-content__nope">Ничего не найдено, попробуйте другой запрос</div>
       {% if "/blog/" == pagUrl %}
         <ul class="list-reset blog-content__list">
-          {% for post in collections.blog %}
+          {% for post in collections.blog | reverse %}
             <li class="blog-content__item">
               <article class="blog-content-card">
                 <h3 class="blog-content-card__title">

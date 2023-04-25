@@ -84,8 +84,8 @@ module.exports = function(eleventyConfig) {
         case 'howto':
           arg2 = 'Как это делается?'
           break;
-        case 'fishki':
-          arg2 = 'Фишки'
+        case 'HTML':
+          arg2 = 'HTML'
           break;
         default:
           arg2 = 'Показать все';
