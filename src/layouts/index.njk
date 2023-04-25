@@ -87,7 +87,7 @@
         </div>
         <div class="col">
           <ul class="list-reset last-articles__list">
-            {% for post in collections.blog %}
+            {% for post in collections.blog | reverse %}
               {% if (loop.index <= 5) %}
                 <li class="last-articles__item">
                   <article class="last-articles-card">
