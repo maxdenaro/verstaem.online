@@ -3,6 +3,15 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const readingTime = require('eleventy-plugin-reading-time');
 const moment = require('moment-timezone');
 const htmlmin = require("html-minifier");
+const markdownItDefault = require('markdown-it');
+const outdent = require('outdent');
+
+// you can use any plugins and configs you want
+const markdownIt = markdownItDefault({
+  html: true,
+  breaks: false,
+  linkify: true,
+});
 
 module.exports = function(eleventyConfig) {
 
@@ -87,6 +96,9 @@ module.exports = function(eleventyConfig) {
         case 'HTML':
           arg2 = 'HTML'
           break;
+        case 'nearweb':
+          arg2 = 'Околовеб'
+          break;
         default:
           arg2 = 'Показать все';
       }
@@ -101,6 +113,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('consoleDump', function(asd) {
     console.log(asd);
   });
+
+  eleventyConfig.addPairedShortcode("tableShortcode", function(children) {
+    const content = markdownIt.render(children);
+    return outdent`<div class="table-wrapper">${content}</div>`
+});
 
   return {
     addPassthroughFileCopy: true,

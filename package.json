@@ -7,7 +7,9 @@
   "dependencies": {
     "eleventy-plugin-reading-time": "^0.0.1",
     "jsdom": "^16.5.1",
+    "markdown-it": "^13.0.1",
     "moment-timezone": "^0.5.33",
+    "outdent": "^0.8.0",
     "picomatch": "^2.2.2"
   },
   "devDependencies": {
