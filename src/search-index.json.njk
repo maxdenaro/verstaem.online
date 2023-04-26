@@ -10,6 +10,7 @@ permalink: '/search-feed.json'
         "author": "{{ item.data.author }}",
         "url": "{{ item.url }}",
         "category": "{{ item.data.categories[0] }}",
+        "categoryRu": "{{ item.data.categories[0] | changeTextInRussian }}",
         "cover": "{{ item.data.cover }}"
       }{% if not loop.last %},{% endif %}
     {% endfor %}
