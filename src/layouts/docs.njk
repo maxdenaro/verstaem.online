@@ -1,0 +1,18 @@
+{% include 'header.njk' %}
+
+<main class="main">
+  <section class="hero hero--layouts section-offset">
+    <div class="container">
+      <h1 class="hero__title">{{ title }}</h1>
+    </div>
+  </section>
+  <section class="content section-offset">
+    <div class="container">
+      <div class="post__content">
+        {{ content | safe }}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}
