@@ -6,6 +6,87 @@
       <h1 class="hero__title">{{ title }}</h1>
     </div>
   </section>
+  <section class="layouts-page-list section-offset" style="display: none;">
+    {% set pagUrl = page.url %}
+    <div class="container">
+      <h2 class="layouts-page-list__title visually-hidden">Макеты для практики</h2>
+      <ul class="list-reset layouts-page-list__nav">
+        <li class="layouts-page-list__item">
+          <a href="/tasks/" class="layouts-page-list__link {% if "/tasks/" == pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Показать все
+          </a>
+        </li>
+        <li class="layouts-page-list__item">
+          <a href="/tasks/easy/" class="layouts-page-list__link {% if "easy" in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Легкий
+          </a>
+        </li>
+        <li class="layouts-page-list__item">
+          <a href="/tasks/normal/" class="layouts-page-list__link {% if "normal" in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Средний
+          </a>
+        </li>
+        <li class="layouts-page-list__item">
+          <a href="/tasks/hard/" class="layouts-page-list__link {% if "hard" in pagUrl %} layouts-page-list__link--active {% endif %}  ">
+            Сложный
+          </a>
+        </li>
+      </ul>
+      {% if "/tasks/" == pagUrl %}
+        <ul class="list-reset layouts-page-list__list grid">
+          {% for post in collections.tasks | reverse -%}
+            <li class="layouts-page-list__item">
+              <article class="layouts-page-card">
+                <div class="layouts-page-card__image">
+                  <div class="layouts-page-card__badges">
+                    {% for item in post.data.levels %}
+                      <a href="/tasks/{{ item }}" class="badge">
+                        {{ item | changeTextInRussian }}
+                      </a>
+                    {% endfor %}
+                    {% for item in post.data.props %}
+                      <a class="badge badge--gray">
+                        {{ item }}
+                      </a>
+                    {% endfor %}
+                  </div>
+                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
+                </div>
+                <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
+                <p class="layouts-page-card__descr">{{ post.data.description }}</p>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <ul class="list-reset layouts-page-list__list grid">
+          {% for post in collections.levelsListTasks[tag] | reverse -%}
+            <li class="layouts-page-list__item">
+              <article class="layouts-page-card">
+                <div class="layouts-page-card__image">
+                  <div class="layouts-page-card__badges">
+                    {% for item in post.data.levels %}
+                      <a href="/tasks/{{ item }}" class="badge">
+                        {{ item | changeTextInRussian }}
+                      </a>
+                    {% endfor %}
+                    {% for item in post.data.props %}
+                      <a class="badge badge--gray">
+                        {{ item }}
+                      </a>
+                    {% endfor %}
+                  </div>
+                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
+                </div>
+                <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
+                <p class="layouts-page-card__descr">{{ post.data.description }}</p>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </section>
 </main>
 
 {% include 'footer.njk' %}

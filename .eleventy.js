@@ -75,6 +75,22 @@ module.exports = function(eleventyConfig) {
     return catSet;
   });
 
+  eleventyConfig.addCollection('levelsListTasks', collection => {
+    let catSet = {};
+    collection.getAll().forEach(item => {
+        if (!item.data.levels2) return;
+        item.data.levels2.filter(
+            cat => !['tasks'].includes(cat)
+        ).forEach(
+            cat => {
+                if (!catSet[cat]) { catSet[cat] = []; }
+                catSet[cat].push(item)
+            }
+        );
+    });
+    return catSet;
+  });
+
    eleventyConfig.addFilter("changeTextInRussian", function(arg1) {
       let arg2;
       switch (arg1) {
