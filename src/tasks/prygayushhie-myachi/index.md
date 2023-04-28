@@ -9,7 +9,7 @@ levels2:
 taskLink: "https://codepen.io/verstaem_online/pen/qBJjgBw"
 answerLink: "https://codepen.io/verstaem_online/pen/rNqwPVZ"
 taskImage: ""
-taskVideo: "img/task.mp4"
+taskVideo: "http://media.verstaem.online/tasks/prygayushhie-myachi/task.mp4"
 skills: [
   "Animation", "CSS"
 ]
