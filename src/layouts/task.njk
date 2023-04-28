@@ -136,13 +136,7 @@
             <img src="{{ taskImage }}" alt="Как должен выглядеть результат задачи">
           {% endif %}
           {% if taskVideo %}
-            <video controls preload="metadata">
-              <source src="{{ taskVideo }}" type="video/mp4">
-              <p>
-                Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его по
-                <a href="{{ page.url }}{{ taskVideo }}">этой ссылке</a>.
-              </p>
-            </video>
+            <video src="{{ taskVideo }}" preload="metadata" loop="" muted="" autoplay="" playsinline=""></video>
           {% endif %}
         </div>
       </div>
