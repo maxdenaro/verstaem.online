@@ -6,7 +6,7 @@
       <h1 class="hero__title">{{ title }}</h1>
     </div>
   </section>
-  <section class="layouts-page-list section-offset" style="display: none;">
+  <section class="layouts-page-list section-offset">
     {% set pagUrl = page.url %}
     <div class="container">
       <h2 class="layouts-page-list__title visually-hidden">Макеты для практики</h2>
@@ -33,13 +33,13 @@
         </li>
       </ul>
       {% if "/tasks/" == pagUrl %}
-        <ul class="list-reset layouts-page-list__list grid">
+        <ul class="list-reset layouts-page-list__list layouts-page-list__list--tasks grid">
           {% for post in collections.tasks | reverse -%}
             <li class="layouts-page-list__item">
               <article class="layouts-page-card">
                 <div class="layouts-page-card__image">
                   <div class="layouts-page-card__badges">
-                    {% for item in post.data.levels %}
+                    {% for item in post.data.levels2 %}
                       <a href="/tasks/{{ item }}" class="badge">
                         {{ item | changeTextInRussian }}
                       </a>
@@ -50,7 +50,7 @@
                       </a>
                     {% endfor %}
                   </div>
-                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
+                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" srcset="{{ post.url }}{{ post.data.image2x }} 2x" class="image" alt="{{ post.data.title }}">
                 </div>
                 <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
                 <p class="layouts-page-card__descr">{{ post.data.description }}</p>
@@ -59,13 +59,13 @@
           {% endfor %}
         </ul>
       {% else %}
-        <ul class="list-reset layouts-page-list__list grid">
+        <ul class="list-reset layouts-page-list__list layouts-page-list__list--tasks grid">
           {% for post in collections.levelsListTasks[tag] | reverse -%}
             <li class="layouts-page-list__item">
               <article class="layouts-page-card">
                 <div class="layouts-page-card__image">
                   <div class="layouts-page-card__badges">
-                    {% for item in post.data.levels %}
+                    {% for item in post.data.levels2 %}
                       <a href="/tasks/{{ item }}" class="badge">
                         {{ item | changeTextInRussian }}
                       </a>
@@ -76,7 +76,7 @@
                       </a>
                     {% endfor %}
                   </div>
-                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
+                  <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" srcset="{{ post.url }}{{ post.data.image2x }} 2x" class="image" alt="{{ post.data.title }}">
                 </div>
                 <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
                 <p class="layouts-page-card__descr">{{ post.data.description }}</p>
