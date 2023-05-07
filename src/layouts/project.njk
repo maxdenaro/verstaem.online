@@ -32,7 +32,19 @@
                 {{item}}
               </a>
             {% endfor %}
+            {% if author %}
+              <a class="badge badge--gray">
+                Авторский
+              </a>
+            {% endif %}
           </div>
+          {% if author %}
+            <div class="hero__author-info">
+              <p class="hero__author-info-text">Уникальный макет, разработанный специально для проекта
+                verstaem.online. Можно использовать как в тренировочных, так и в коммерческих целях.</p>
+              <div class="hero__author-info-name">Автор дизайна: {{ author }}</div>
+            </div>
+          {% endif %}
           <div class="hero__links">
             {% if figmaLink %}
               <a href="{{ figmaLink }}" target="_blank" class="hero__link">

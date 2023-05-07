@@ -69,6 +69,11 @@
                         {{ item }}
                       </a>
                     {% endfor %}
+                    {% if post.data.author %}
+                      <a class="badge badge--gray">
+                        Авторский
+                      </a>
+                    {% endif %}
                   </div>
                   <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
                 </div>
