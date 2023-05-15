@@ -20,5 +20,6 @@ props: [
 ]
 articles: ""
 easyText: 'Попробуй реализовать загрузку товаров в корзину через JS'
+language: "ru"
 layout: "project.njk"
 ---

@@ -74,6 +74,11 @@
                         Авторский
                       </a>
                     {% endif %}
+                    {% if post.data.language %}
+                      <a class="badge badge--gray">
+                        {{ post.data.language }}
+                      </a>
+                    {% endif %}
                   </div>
                   <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
                 </div>

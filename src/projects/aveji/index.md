@@ -20,5 +20,6 @@ props: [
 ]
 articles: ""
 easyText: 'Попробуй сделать валидацию формы внизу страницы'
+language: "ru"
 layout: "project.njk"
 ---

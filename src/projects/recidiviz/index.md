@@ -20,5 +20,6 @@ props: [
 ]
 articles: ""
 easyText: 'Попробуй добавить сюда модальное окно по клику на "See out work in action"'
+language: "en"
 layout: "project.njk"
 ---

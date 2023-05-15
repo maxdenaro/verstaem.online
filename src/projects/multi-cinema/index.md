@@ -20,5 +20,6 @@ props: [
 ]
 articles: ""
 easyText: 'Попробуй сделать переключение темы с темной на светлую, или же сделать подгрузку данных из Kinopoisk API'
+language: "ru"
 layout: "project.njk"
 ---

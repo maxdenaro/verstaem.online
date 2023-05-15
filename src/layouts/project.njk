@@ -37,6 +37,11 @@
                 Авторский
               </a>
             {% endif %}
+            {% if language %}
+              <a class="badge badge--gray">
+                {{ language }}
+              </a>
+            {% endif %}
           </div>
           {% if author %}
             <div class="hero__author-info">

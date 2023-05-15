@@ -20,5 +20,6 @@ props: [
 ]
 articles: ""
 easyText: ''
+language: "en"
 layout: "project.njk"
 ---
