@@ -133,7 +133,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPairedShortcode("tableShortcode", function(children) {
     const content = markdownIt.render(children);
     return outdent`<div class="table-wrapper">${content}</div>`
-});
+  });
 
   return {
     addPassthroughFileCopy: true,
