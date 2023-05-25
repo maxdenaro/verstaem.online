@@ -2,7 +2,8 @@
 title: "PRO Сборщики: Что это и зачем?"
 date: "2023-04-26"
 descr: "В этой статье поговорим про генераторы файлов для статических сайтов. Разберёмся с понятиями, поговорим про то, зачем они нужны, а также разберём несколько популярных сборщиков."
-author: "Wyndace"
+author: "alexandr_vasilyev"
+pseudonim: "Wyndace"
 cover: "img/cover.jpg"
 categories:
   - nearweb

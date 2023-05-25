@@ -12,6 +12,7 @@ levels:
   - easy
 figmaLink: "https://www.figma.com/file/rZ1hBLLnUft8KBj6bFSOTd/Recidiviz-(MaxGraph-Youtube-Spring-2023)?node-id=1-2"
 previewLink: "https://live.verstaem.online/recidiviz/"
+previewAuthor: "maksim_vasyanovich"
 skills: [
   "Простая сетка (flex или grid)", "Псевдоэлементы"
 ]

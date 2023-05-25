@@ -9,6 +9,7 @@
     "jsdom": "^16.5.1",
     "markdown-it": "^13.0.1",
     "moment-timezone": "^0.5.33",
+    "nunjucks": "^3.2.4",
     "outdent": "^0.8.0",
     "picomatch": "^2.2.2"
   },

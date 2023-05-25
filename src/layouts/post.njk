@@ -22,7 +22,7 @@
             <div class="post__meta">
               <a class="post__category badge badge--gray">{{ categories[0] | changeTextInRussian }}</a>
               <time class="post__date" datetime="{{ date }}">{{ date | dateformat }}</time>
-              <div class="post__author">Автор: {{ author }}</div>
+              <div class="post__author">Автор: <a href="/people/{{author}}">{{ pseudonim }}</a></div>
             </div>
           </div>
           <div class="post__content">

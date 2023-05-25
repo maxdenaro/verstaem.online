@@ -12,6 +12,7 @@ levels:
   - hard
 figmaLink: "https://www.figma.com/file/r9RnpJZ6IwYEDAGiymdXBj/YouTube-Createx-Marathon?node-id=0-1&t=QF1Wz7xZe2prv7Hs-0"
 previewLink: "https://live.verstaem.online/createx/"
+previewAuthor: "maksim_vasyanovich"
 skills: [
   "Сетка (flex или grid)", "Псевдоэлементы", "Анимация", "JS-библиотеки", "Работа с видео", "Отправка форм"
 ]

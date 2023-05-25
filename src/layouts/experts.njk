@@ -3,21 +3,31 @@
 <main class="main">
   <section class="hero hero--experts">
     <div class="container">
-      <h1 class="hero__title">Наши эксперты</h1>
-      <p class="hero__text">Отличные верстальщики, разработчики проекта и просто хорошие люди!</p>
+      <h1 class="hero__title">Участники проекта</h1>
+      <p class="hero__text">Отличные верстальщики, разработчики проекта, авторы статей</p>
     </div>
   </section>
   <section class="experts-content section-offset">
     <div class="container">
       <h2 class="title visually-hidden">Эксперты сайта</h2>
       <ul class="list-reset experts-content__list grid">
-        {% for item in collections.experts -%}
+        {% for item in people -%}
           <li class="experts-content__item">
-            <div class="experts-content__image">
-              <img loading="lazy" src="{{ item.url }}{{ item.data.image }}" class="image" width="560" height="600" alt="{{ item.data.name }}">
-            </div>
-            <div class="experts-content__name">{{ item.data.name }}</div>
-            <p class="experts-content__descr">{{ item.data.descr }}</p>
+            <a href="/people/{{item.key}}" class="experts-content__link">
+              <div class="experts-content__image">
+                <div class="experts-content__badges">
+                  {% if item.role %}
+                    <span class="badge badge--gray">Эксперт</span>
+                  {% endif %}
+                  {% if item.role2 %}
+                    <span class="badge badge--gray">Автор</span>
+                  {% endif %}
+                </div>
+                <img loading="lazy" src="/assets/img/people/{{item.key}}/{{item.avatar}}" class="image" width="560" height="600" alt="{{ item.name }}">
+              </div>
+              <div class="experts-content__name">{{ item.name }}</div>
+              <p class="experts-content__descr">{{ item.bio }}</p>
+            </a>
           </li>
         {% endfor %}
       </ul>

@@ -2,7 +2,8 @@
 title: "Разбор базовых HTML-тегов"
 date: "2023-04-25"
 descr: "В этой статье автор рассказывает о самых базовых тегах в HTML - заголовки, списки, картинки, ссылки и т.д."
-author: "PinchOfWeb"
+author: "pavel_alekseev"
+pseudonim: "PinchOfWeb"
 cover: "img/cover.jpg"
 categories:
  - HTML

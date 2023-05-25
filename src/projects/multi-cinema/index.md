@@ -12,6 +12,7 @@ levels:
   - normal
 figmaLink: "https://www.figma.com/file/H89oPU6Jw54iPZAvmiIqKg/MultiCinema?node-id=1%3A493&t=uu0RVVfROHS9MkSb-1"
 previewLink: "https://live.verstaem.online/multi-cinema/"
+previewAuthor: "alexandr_vasilyev"
 skills: [
   "Сетка (flex или grid)", "БЭМ (компонентный подход)"
 ]

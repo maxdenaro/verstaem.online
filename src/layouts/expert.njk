@@ -1,28 +1,53 @@
 {% include 'header.njk' %}
 
-<main class="main">
-  <section class="hero hero--experts">
-    <div class="container">
-      <h1 class="hero__title">Наши эксперты</h1>
-      <p class="hero__text">Отличные верстальщики, разработчики проекта и просто хорошие люди!</p>
-    </div>
-  </section>
-  <section class="experts-content section-offset">
-    <div class="container">
-      <h2 class="title visually-hidden">Эксперты сайта</h2>
-      <ul class="list-reset experts-content__list grid">
-        {% for item in collections.experts -%}
-          <li class="experts-content__item">
-            <div class="experts-content__image">
-              <img loading="lazy" src="{{ item.url }}{{ item.image }}" class="image" width="560" height="600" alt="{{ item.name }}">
+<section class="expert-content hero">
+  <div class="container">
+    <h1 class="hero__title expert-content__title">{{ author.name }}
+      {% if author.pseudonim %}
+        &mdash; <span style="color: var(--second-color);">{{author.pseudonim}}</span>
+      {% endif %}
+    </h1>
+    <div class="expert-content__inner grid">
+      <div class="expert-content__image">
+        <img loading="lazy" src="/assets/img/people/{{ author.key }}/{{author.avatar}}" class="image" width="560" height="600" alt="{{ author.name }}">
+      </div>
+      <div class="expert-content__info">
+        <p class="expert-content__descr">{{author.bio}}</p>
+        <div class="expert-content__contribution">
+          {% if author.role2 %}
+            <div class="expert-content__col">
+              <h2 class="expert-content__subtitle">Автор — пишет статьи на сайт</h2>
+              <ul class="list-reset expert-content__list">
+                {% for post in collections.blog | getPostsByAuthor(author.key) %}
+                  <li class="expert-content__item">
+                    <a href="{{post.url}}" class="expert-content__link">
+                      {{post.data.title}}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
             </div>
-            <div class="experts-content__name">{{ item.name }}</div>
-            <p class="experts-content__descr">{{ item.descr }}</p>
-          </li>
-        {% endfor %}
-      </ul>
+          {% endif %}
+
+          {% if author.role %}
+            <div class="expert-content__col">
+              <h2 class="expert-content__subtitle">Эксперт — делает превью макетов</h2>
+              <ul class="list-reset expert-content__list">
+                {% for post in collections.projects | getProjectsByPreview(author.key) %}
+                  <li class="expert-content__item">
+                    <a href="{{post.url}}" class="expert-content__link">
+                      {{post.data.title}}
+                    </a>
+                  </li>
+                {% endfor %}
+
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
 {% include 'footer.njk' %}

@@ -1,0 +1,50 @@
+[
+  {
+    "key": "maksim_vasyanovich",
+    "name": "Максим Васянович",
+    "pseudonim": "MaxGraph",
+    "bio": "Создатель проекта, верстальщик в Lenta.com",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": "author"
+  },
+  {
+    "key": "alexandr_vasilyev",
+    "name": "Александр Васильев",
+    "pseudonim": "Wyndace",
+    "bio": "Адепт разработки Nuxt сайтов, любитель Golang, полудизайнер, а ещё использует Arch и ищет выход из Neovim",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": "author"
+  },
+  {
+    "key": "artem_titov",
+    "name": "Артем Титов",
+    "pseudonim": "",
+    "bio": "Креативный разработчик, нацеленный на разработку интерактивных сайтов и интерфейсов, что бы попасть в «Developer Award»",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert"
+  },
+  {
+    "key": "natalya_alimova",
+    "name": "Наталья Алимова",
+    "pseudonim": "",
+    "bio": "Фронтендер, фанат веб-анимации и доступных интерфейсов",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert"
+  },
+  {
+    "key": "pavel_alekseev",
+    "name": "Павел Алексеев",
+    "pseudonim": "PinchOfWeb",
+    "bio": "",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": "author"
+  }
+]

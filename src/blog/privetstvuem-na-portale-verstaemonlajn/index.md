@@ -2,7 +2,8 @@
 title: "Приветствуем на портале верстаем.онлайн!"
 date: "2023-04-24"
 descr: "Рассказываем, что такое Верстаем.Онлайн, как пользоваться проектом, какие планы на будущее"
-author: "MaxGraph"
+author: "maksim_vasyanovich"
+pseudonim: "MaxGraph"
 cover: "img/cover.jpg"
 categories:
  - info

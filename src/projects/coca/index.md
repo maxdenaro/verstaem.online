@@ -12,6 +12,7 @@ levels:
   - hard
 figmaLink: "https://www.figma.com/file/ugDsET9AfdwJMCQ4qf2Qfg/Coca---Digital-Marketing-Website?node-id=134-411&t=mLwL5XYlM9T4hF5I-0"
 previewLink: "https://live.verstaem.online/coca/"
+previewAuthor: "pavel_alekseev"
 skills: [
   "Сетка (flex или grid)", "БЭМ (компонентный подход)", "Работа с формами", "Переключение контента (js)"
 ]

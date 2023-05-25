@@ -135,6 +135,19 @@ module.exports = function(eleventyConfig) {
     return outdent`<div class="table-wrapper">${content}</div>`
   });
 
+  eleventyConfig.addFilter("getAuthor", (authors,label) => {
+    let author = authors.filter(a => a.key === label)[0];
+    return author;
+  });
+
+  eleventyConfig.addFilter("getPostsByAuthor", (posts,author) => {
+    return posts.filter(a => a.data.author === author);
+  });
+
+  eleventyConfig.addFilter("getProjectsByPreview", (posts,author) => {
+    return posts.filter(a => a.data.previewAuthor === author);
+  });
+
   return {
     addPassthroughFileCopy: true,
     markdownTemplateEngine: "njk",

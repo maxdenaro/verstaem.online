@@ -1,4 +1,4 @@
 ---
-title: "Эксперты"
+title: "Участники"
 layout: "experts.njk"
 ---

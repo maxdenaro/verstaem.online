@@ -11,7 +11,8 @@ image2x: "img/inner-image_2x.jpg"
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/vgrMGMBzIjMdYDi5z3GY1M/Gogames?node-id=4%3A2731&t=GSr5NYkBg1fP8Zcm-1"
-previewLink: ""
+previewLink: "https://live.verstaem.online/gogames/"
+previewAuthor: "natalya_alimova"
 skills: [
   "Сетка (flex или grid)", "Анимация", "Декоративные элементы"
 ]

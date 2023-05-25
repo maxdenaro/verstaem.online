@@ -2,7 +2,8 @@
 title: "Семантические теги в HTML"
 date: "2023-05-03"
 descr: "В этой статье автор рассказывает о семантических тегах в HTML"
-author: "PinchOfWeb"
+author: "pavel_alekseev"
+pseudonim: "PinchOfWeb"
 cover: "img/cover.jpg"
 categories:
  - HTML

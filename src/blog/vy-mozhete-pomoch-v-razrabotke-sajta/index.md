@@ -2,7 +2,8 @@
 title: "Вы можете помочь в разработке сайта"
 date: "2023-04-24"
 descr: "Рассказываем, что еще ожидается на нашем портале, и как пользователи проекта могут помочь в его развитии"
-author: "MaxGraph"
+author: "maksim_vasyanovich"
+pseudonim: "MaxGraph"
 cover: "img/cover.jpg"
 categories:
  - info

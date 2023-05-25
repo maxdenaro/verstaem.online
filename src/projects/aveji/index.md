@@ -12,6 +12,7 @@ levels:
   - easy
 figmaLink: "https://www.figma.com/file/Mjw3T665A9Wjj2g2LSUYX6/Aveji?node-id=0%3A1&t=jLRrg3pCZIfELRZt-1"
 previewLink: "https://live.verstaem.online/aveji/"
+previewAuthor: "artem_titov"
 skills: [
   "Сетка (flex или grid)", "Анимация"
 ]

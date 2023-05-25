@@ -41,7 +41,7 @@
                 </h3>
                 <div class="blog-content-card__meta">
                   <time class="blog-content-card__date" datetime="{{ post.data.date }}">{{ post.data.date | dateformat }}</time>
-                  <a class="blog-content-card__author">{{ post.data.author }}</a>
+                  <a class="blog-content-card__author">{{ post.data.pseudonim }}</a>
                   <a href="/blog/{{ post.data.categories[0] }}" class="blog-content-card__category badge">{{ post.data.categories[0] | changeTextInRussian }}</a></div>
               </article>
             </li>
@@ -57,7 +57,7 @@
                 </h3>
                 <div class="blog-content-card__meta">
                   <time class="blog-content-card__date" datetime="{{ post.data.date }}">{{ post.data.date | dateformat }}</time>
-                  <a class="blog-content-card__author">{{ post.data.author }}</a>
+                  <a class="blog-content-card__author">{{ post.data.pseudonim }}</a>
                   <a href="/blog/{{ post.data.categories[0] }}" class="blog-content-card__category badge">{{ post.data.categories[0] | changeTextInRussian }}</a></div>
               </article>
             </li>
