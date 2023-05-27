@@ -13,6 +13,7 @@ levels:
   - easy
 figmaLink: "https://www.figma.com/file/Fn88HQzfmrE7xCHG0yPsEW/Castaway?type=design&node-id=0%3A1&t=baI183eUNAoIr3nW-1"
 previewLink: "https://live.verstaem.online/castaway/"
+previewAuthor: "maksim_vasyanovich"
 skills: [
   "Сетка (flex или grid)", "Анимация",, "Слайдер"
 ]

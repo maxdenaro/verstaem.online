@@ -13,6 +13,7 @@ levels:
   - easy
 figmaLink: "https://www.figma.com/file/cyOuCcxqhxwqCrillGbcFm/Cyberpunk?type=design&node-id=0%3A1&t=qeQyGCDGdRDR9bfR-1"
 previewLink: "https://live.verstaem.online/cyberpunk/"
+previewAuthor: "maksim_vasyanovich"
 skills: [
   "Сетка (flex или grid)", "Анимация", "Элементы формы", "clip-path", "Псевдоэлементы"
 ]

@@ -13,6 +13,7 @@ levels:
   - easy
 figmaLink: "https://www.figma.com/file/SjHvI8W1yzwJjzyUrCPpsI/House?type=design&node-id=3%3A838&t=VZiVKXvlLixjtJN8-1"
 previewLink: "https://live.verstaem.online/house/"
+previewAuthor: "maksim_vasyanovich"
 skills: [
   "Сетка (flex или grid)", "Анимация", "ui-kit"
 ]
