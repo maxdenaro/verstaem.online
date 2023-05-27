@@ -1,9 +1,24 @@
 {% include 'header.njk' %}
 
 <main class="main">
+  {% set pagUrl = page.url %}
   <section class="hero hero--layouts section-offset">
     <div class="container">
-      <h1 class="hero__title">{{ title }}</h1>
+      {% if "/projects/" == pagUrl %}
+        <h1 class="hero__title">
+          {{ title }}
+          <span style="color: var(--second-color);">
+            ({{ collections.projects |  length }})
+          </span>
+        </h1>
+      {% else %}
+        <h1 class="hero__title">
+          {{ title }}
+          <span style="color: var(--second-color);">
+            ({{ collections.levelsList[tag] |  length }})
+          </span>
+        </h1>
+      {% endif %}
     </div>
   </section>
   <section class="how section-offset" style="display: none;">
@@ -27,7 +42,6 @@
     </div>
   </section>
   <section class="layouts-page-list section-offset">
-    {% set pagUrl = page.url %}
     <div class="container">
       <h2 class="layouts-page-list__title visually-hidden">Макеты для практики</h2>
       <ul class="list-reset layouts-page-list__nav">
