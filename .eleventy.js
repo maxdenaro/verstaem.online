@@ -104,7 +104,7 @@ module.exports = function(eleventyConfig) {
           arg2 = 'Сложный'
           break;
         case 'info':
-          arg2 = 'Объявления'
+          arg2 = 'Информация'
           break;
         case 'howto':
           arg2 = 'Как это делается?'
@@ -114,6 +114,9 @@ module.exports = function(eleventyConfig) {
           break;
         case 'nearweb':
           arg2 = 'Околовеб'
+          break;
+        case 'web-notes':
+          arg2 = 'Web-заметки'
           break;
         default:
           arg2 = 'Показать все';

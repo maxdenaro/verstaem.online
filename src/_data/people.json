@@ -46,5 +46,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": "author"
+  },
+  {
+    "key": "artem_petrovskyi",
+    "name": "Артем Петровский",
+    "pseudonim": "",
+    "bio": "Творческий архитектор цифровых миров, смешивающий красоту и функциональность в создании сайтов и веб-интерфейсов.",
+    "social": "https://t.me/artpetrovskiy",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

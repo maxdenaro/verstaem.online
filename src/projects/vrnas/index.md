@@ -11,7 +11,8 @@ image2x: "img/inner-image_2x.jpg"
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/mcc94u243UakSz2Ied9Zeh/VRNas?node-id=21%3A12734&t=xk3H4ab8fIl6IWUq-1"
-previewLink: ""
+previewLink: "https://live.verstaem.online/vrnas/"
+previewAuthor: "artem_petrovskyi"
 skills: [
   "Сетка (flex или grid)", "Анимация", "Элементы формы", "Модальные окна"
 ]

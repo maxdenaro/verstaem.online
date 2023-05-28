@@ -12,6 +12,7 @@ levels:
   - normal
 figmaLink: "https://www.figma.com/file/N8cL2Qns1b0A6VsmdX1jTN/Ujjo-(Copy)?node-id=1-130&t=5OzOwhNDTNVeWwtl-0"
 previewLink: "https://live.verstaem.online/ujjo/"
+previewAuthor: "maksim_vasyanovich"
 skills: [
   "Простая сетка (flex или grid)", "Псевдоэлементы", "Анимация", "Отрицательный margin"
 ]
