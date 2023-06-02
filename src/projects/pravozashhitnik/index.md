@@ -12,7 +12,8 @@ author: Аванесов Юрий
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/eTEMtLsjPBGYZwP5fpLnkq/lawyer_website?type=design&node-id=1%3A364&t=T968gCROEOQPP5xg-1"
-previewLink: ""
+previewLink: "https://live.verstaem.online/pravozashhitnik/"
+previewAuthor: "pavel_alekseev"
 skills: [
   "Сетка (flex или grid)", "Анимация", "Элементы формы", "Декоративные элементы", "Псевдоэлементы"
 ]
