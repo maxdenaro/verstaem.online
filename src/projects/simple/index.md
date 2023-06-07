@@ -12,7 +12,7 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/sJwabNIQ83JF9XIGfYCOl4/Simple?type=design&node-id=0%3A1&t=TmXGojm5x792sypv-1"
-previewLink: "https://live.verstaem.online/simple/"
+previewLink: "https://live.verstaem.online/aura/"
 previewAuthor: "maksim_vasyanovich"
 skills: [
   "Bootstrap", "ui-kit", "Адаптивная верстка"
