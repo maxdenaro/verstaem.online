@@ -151,6 +151,16 @@ module.exports = function(eleventyConfig) {
     return posts.filter(a => a.data.previewAuthor === author);
   });
 
+  eleventyConfig.addFilter('getByLastWeek', (posts) => {
+    let date = new Date();
+    let old = new Date();
+    old.setDate(old.getDate() - 7);
+
+    return posts.filter(p => {
+      return (p.date <= date) && (p.date >= old);
+    });
+  });
+
   return {
     addPassthroughFileCopy: true,
     markdownTemplateEngine: "njk",
