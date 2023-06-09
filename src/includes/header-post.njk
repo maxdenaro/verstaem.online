@@ -9,20 +9,23 @@
   <meta name="theme-color" content="#1f1f1f">
   <meta name="yandex-verification" content="7eb47f5c5203f925" />
   <meta name="google-site-verification" content="-uWw0R36BWQVvCnV1ky36uuO0w-v-sTRZrxno-o-PxQ" />
+  <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
   <link rel="preload" href="/assets/fonts/NextArtBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <title>{{ title }} | {{ metadata.title }}</title>
+  <title>{{ title }} &mdash; {{ metadata.title }}</title>
   <meta name="description" content="{{ descr }}">
+  <meta itemprop="description" content="{{ descr }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ title }} | Верстаем.онлайн">
-  <meta property="og:site_name" content="{{ description }}">
+  <meta property="og:title" content="{{ title }} &mdash; {{ metadata.title }}">
+  <meta property="og:description" content="{{ descr }}">
+  <meta property="og:site_name" content="{{ metadata.title }}">
   <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
   <meta property="og:image" content="{{ metadata.url }}{{ page.url }}img/cover.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:title" content="{{ title }} &mdash; {{ metadata.title }}">
+  <meta name="twitter:description" content="{{ descr }}">
   <meta name="twitter:site" content="{{ metadata.url }}{{ page.url }}">
   <meta name="twitter:image" content="{{ metadata.url }}{{ page.url }}img/cover.jpg">
   <link rel="stylesheet" href="/assets/css/vendor.css?{{ metadata.version }}">

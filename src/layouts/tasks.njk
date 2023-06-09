@@ -1,15 +1,29 @@
 {% include 'header.njk' %}
 
 <main class="main">
+  {% set pagUrl = page.url %}
   <section class="hero hero--layouts section-offset">
     <div class="container">
-      <h1 class="hero__title">{{ title }}</h1>
+    {% if "/tasks/" == pagUrl %}
+        <h1 class="hero__title">
+          {{ h1 }}
+          <span style="color: var(--second-color);">
+            ({{ collections.tasks | length }})
+          </span>
+        </h1>
+      {% else %}
+        <h1 class="hero__title">
+          {{ h1 }}
+          <span style="color: var(--second-color);">
+            ({{ collections.levelsListTasks[tag] | length }})
+          </span>
+        </h1>
+      {% endif %}
     </div>
   </section>
   <section class="layouts-page-list section-offset">
-    {% set pagUrl = page.url %}
     <div class="container">
-      <h2 class="layouts-page-list__title visually-hidden">Макеты для практики</h2>
+      <h2 class="layouts-page-list__title visually-hidden">Задания для практики</h2>
       <ul class="list-reset layouts-page-list__nav">
         <li class="layouts-page-list__item">
           <a href="/tasks/" class="layouts-page-list__link {% if "/tasks/" == pagUrl %} layouts-page-list__link--active {% endif %}  ">

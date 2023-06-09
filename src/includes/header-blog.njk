@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+{% set pagUrl = page.url %}
+{{ page | consoleDump }}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#1f1f1f">
+  <meta name="yandex-verification" content="7eb47f5c5203f925" />
+  <meta name="google-site-verification" content="-uWw0R36BWQVvCnV1ky36uuO0w-v-sTRZrxno-o-PxQ" />
+  <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+  <link rel="preload" href="/assets/fonts/NextArtBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  {% if "/blog/" == pagUrl %}
+    <title>{{ title }} &mdash; {{ metadata.title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta itemprop="description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }} &mdash; {{ metadata.title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="{{ metadata.title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }} &mdash; {{ metadata.title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ page.url }}">
+  {% else %}
+    <title>Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo; &mdash; {{ metadata.title }}</title>
+    <meta name="description" content="Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo;">
+    <meta itemprop="description" content="Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo;">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo; &mdash; {{ metadata.title }}">
+    <meta property="og:description" content="Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo;">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="{{ metadata.title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo; &mdash; {{ metadata.title }}">
+    <meta name="twitter:description" content="Статьи по теме &laquo;{{ tag | changeTextInRussian }}&raquo;">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% endif %}
+  <link rel="stylesheet" href="/assets/css/vendor.css?{{ metadata.version }}">
+  <link rel="stylesheet" href="/assets/css/main.css?{{ metadata.version }}">
+  <script defer="defer" src="/assets/js/main.js?{{ metadata.version }}"></script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(93328072, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93328072" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="logo">верстаем.онлайн</a>
+        {% include 'nav.njk' %}
+        <a href="/projects/" class="btn header__btn">Прокачать верстку</a>
+      </div>
+    </header>

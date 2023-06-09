@@ -9,19 +9,22 @@
   <meta name="theme-color" content="#1f1f1f">
   <meta name="yandex-verification" content="7eb47f5c5203f925" />
   <meta name="google-site-verification" content="-uWw0R36BWQVvCnV1ky36uuO0w-v-sTRZrxno-o-PxQ" />
+  <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
   <link rel="preload" href="/assets/fonts/NextArtBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <title>Задача "{{ title }}" | {{ metadata.title }}</title>
+  <title>Задача &laquo{{ title }}&raquo; &mdash; {{ metadata.title }}</title>
   <meta name="description" content="{{ description }}">
+  <meta itemprop="description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Задача {{ title }} | Верстаем.онлайн">
-  <meta property="og:site_name" content="{{ description }}">
+  <meta property="og:title" content="Задача &laquo{{ title }}&raquo; &mdash; {{ metadata.title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:site_name" content="{{ metadata.title }}">
   <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
   <meta property="og:image" content="{{ metadata.url }}{{ page.url }}img/social-cover.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Задача {{ title }}">
+  <meta name="twitter:title" content="Задача &laquo{{ title }}&raquo; &mdash; {{ metadata.title }}">
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:site" content="{{ metadata.url }}{{ page.url }}">
   <meta name="twitter:image" content="{{ metadata.url }}{{ page.url }}img/social-cover.jpg">

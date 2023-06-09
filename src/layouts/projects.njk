@@ -6,14 +6,14 @@
     <div class="container">
       {% if "/projects/" == pagUrl %}
         <h1 class="hero__title">
-          {{ title }}
+          {{ h1 }}
           <span style="color: var(--second-color);">
             ({{ collections.projects |  length }})
           </span>
         </h1>
       {% else %}
         <h1 class="hero__title">
-          {{ title }}
+          {{ h1 }}
           <span style="color: var(--second-color);">
             ({{ collections.levelsList[tag] |  length }})
           </span>
