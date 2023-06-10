@@ -30,36 +30,38 @@
         </svg>
       </button>
       <h2 class="last-actions__title">Новое за неделю</h2>
-      {% if lastWeekProjects.length %}
-        <h3 class="last-actions__subtitle">Макеты</h3>
-        <ul class="list-reset last-actions__list">
-          {% for post in lastWeekProjects %}
-            <li class="last-actions__item">
-              <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-      {% if lastWeekPosts.length %}
-        <h3 class="last-actions__subtitle">Блог</h3>
-        <ul class="list-reset last-actions__list">
-          {% for post in lastWeekPosts %}
-            <li class="last-actions__item">
-              <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-      {% if lastWeekTasks.length %}
-        <h3 class="last-actions__subtitle">Задачи</h3>
-        <ul class="list-reset last-actions__list">
-          {% for post in lastWeekTasks %}
-            <li class="last-actions__item">
-              <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+      <div class="last-actions__content">
+        {% if lastWeekProjects.length %}
+          <h3 class="last-actions__subtitle">Макеты</h3>
+          <ul class="list-reset last-actions__list">
+            {% for post in lastWeekProjects %}
+              <li class="last-actions__item">
+                <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if lastWeekPosts.length %}
+          <h3 class="last-actions__subtitle">Блог</h3>
+          <ul class="list-reset last-actions__list">
+            {% for post in lastWeekPosts %}
+              <li class="last-actions__item">
+                <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if lastWeekTasks.length %}
+          <h3 class="last-actions__subtitle">Задачи</h3>
+          <ul class="list-reset last-actions__list">
+            {% for post in lastWeekTasks %}
+              <li class="last-actions__item">
+                <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
     </div>
   {% endif %}
   <script>

@@ -109,7 +109,7 @@ module.exports = function(eleventyConfig) {
         case 'howto':
           arg2 = 'Как это делается?'
           break;
-        case 'HTML':
+        case 'html':
           arg2 = 'HTML'
           break;
         case 'nearweb':
@@ -117,6 +117,18 @@ module.exports = function(eleventyConfig) {
           break;
         case 'web-notes':
           arg2 = 'Web-заметки'
+          break;
+        case 'js':
+          arg2 = 'JS'
+          break;
+        case 'css':
+          arg2 = 'CSS'
+          break;
+        case 'freelance':
+          arg2 = 'Фриланс'
+          break;
+        case 'selections':
+          arg2 = 'Подборки'
           break;
         default:
           arg2 = 'Показать все';

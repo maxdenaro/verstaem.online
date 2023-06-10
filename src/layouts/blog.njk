@@ -1,13 +1,27 @@
 {% include 'header-blog.njk' %}
 
+{% set pagUrl = page.url %}
 <main class="main">
   <section class="hero hero--blog section-offset">
     <div class="container">
-      <h1 class="hero__title">Блог</h1>
+      {% if "/blog/" == pagUrl %}
+        <h1 class="hero__title">
+          Блог
+          <span style="color: var(--second-color);">
+            ({{ collections.blog | length }})
+          </span>
+        </h1>
+      {% else %}
+        <h1 class="hero__title">
+          Блог &mdash; {{ tag | changeTextInRussian }}
+          <span style="color: var(--second-color);">
+            ({{ collections.categoryList[tag] | length }})
+          </span>
+        </h1>
+      {% endif %}
     </div>
   </section>
   <div class="blog-nav">
-    {% set pagUrl = page.url %}
     <div class="container grid">
       <form action="#" class="blog-nav__form"><input type="search" class="blog-nav__input" placeholder="Поиск...">
       </form>

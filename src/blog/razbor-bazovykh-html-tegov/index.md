@@ -6,7 +6,7 @@ author: "pavel_alekseev"
 pseudonim: "PinchOfWeb"
 cover: "img/cover.jpg"
 categories:
- - HTML
+ - html
 layout: "post.njk"
 ---
 

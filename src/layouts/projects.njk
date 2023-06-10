@@ -66,11 +66,106 @@
           </a>
         </li>
       </ul>
+      <div class="filter">
+        <div class="filter__elem">
+          <label for="pages" class="filter__label">Страницы:</label>
+          <div class="custom-select filter__select">
+            <select class="select" name="pages" id="pages">
+              <option value="non">Не выбрано</option>
+              <option value="onepage">Одностраничный</option>
+              <option value="multipage">Многостраничный</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__elem">
+          <label for="adaptive" class="filter__label">Наличие адаптива:</label>
+          <div class="custom-select filter__select">
+            <select class="select" name="adaptive" id="adaptive">
+              <option value="non">Не выбрано</option>
+              <option value="adaptive">С адаптивом</option>
+              <option value="not_adaptive">Без адаптива</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__elem">
+          <label for="lang" class="filter__label">Язык:</label>
+          <div class="custom-select filter__select">
+            <select class="select" name="lang" id="lang">
+              <option value="non">Не выбрано</option>
+              <option value="ru">Русский</option>
+              <option value="en">Английский</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__elem">
+          <label for="live_preview" class="filter__label">Наличие превью:</label>
+          <div class="custom-select filter__select">
+            <select class="select" name="live_preview" id="live_preview">
+              <option value="non">Не выбрано</option>
+              <option value="exist">Есть</option>
+              <option value="not_exist">Нет</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__elem">
+          <label for="type" class="filter__label">Тип макета:</label>
+          <div class="custom-select filter__select">
+            <select class="select" name="type" id="type">
+              <option value="non">Не выбрано</option>
+              <option value="site">Макет сайта</option>
+              <option value="email">Макет письма</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__elem">
+          <button class="btn-reset filter__reset">Сбросить</button>
+        </div>
+      </div>
+      <div class="filter-none">По вашим фильтрам ничего не найдено</div>
       {% if "/projects/" == pagUrl %}
         <ul class="list-reset layouts-page-list__list grid">
           {% for post in collections.projects | reverse -%}
             <li class="layouts-page-list__item">
-              <article class="layouts-page-card">
+              <article class="
+                layouts-page-card
+                {% for item in post.data.props %}
+                  {% if item == 'Многостраничный' %}
+                    multipage
+                  {% endif %}
+                  {% if item == 'Одностраничный' %}
+                    onepage
+                  {% endif %}
+                  {% if item == 'С адаптивом' %}
+                    adaptive
+                  {% else %}
+                    not_adaptive
+                  {% endif %}
+                {% endfor %}
+
+                {% if post.data.language == 'ru' %}
+                  ru
+                {% endif %}
+
+                {% if post.data.language == 'en' %}
+                  en
+                {% endif %}
+
+                {% if post.data.author %}
+                  authored
+                {% endif %}
+
+                {% if post.data.previewLink %}
+                  exist
+                {% else %}
+                  not_exist
+                {% endif %}
+
+                {% if post.data.emailLayout %}
+                  email
+                {% else %}
+                  site
+                {% endif %}
+              ">
                 <div class="layouts-page-card__image">
                   <div class="layouts-page-card__badges">
                     {% for item in post.data.levels %}
@@ -86,6 +181,11 @@
                     {% if post.data.author %}
                       <a class="badge badge--gray">
                         Авторский
+                      </a>
+                    {% endif %}
+                    {% if post.data.emailLayout %}
+                      <a class="badge badge--gray">
+                        email
                       </a>
                     {% endif %}
                     {% if post.data.language %}
@@ -106,7 +206,46 @@
         <ul class="list-reset layouts-page-list__list grid">
           {% for post in collections.levelsList[tag] | reverse -%}
             <li class="layouts-page-list__item">
-              <article class="layouts-page-card">
+              <article class="
+                layouts-page-card
+                {% for item in post.data.props %}
+                  {% if item == 'Многостраничный' %}
+                    multipage
+                  {% endif %}
+                  {% if item == 'Одностраничный' %}
+                    onepage
+                  {% endif %}
+                  {% if item == 'С адаптивом' %}
+                    adaptive
+                  {% else %}
+                    not_adaptive
+                  {% endif %}
+                {% endfor %}
+
+                {% if post.data.language == 'ru' %}
+                  ru
+                {% endif %}
+
+                {% if post.data.language == 'en' %}
+                  en
+                {% endif %}
+
+                {% if post.data.author %}
+                  authored
+                {% endif %}
+
+                {% if post.data.previewLink %}
+                  exist
+                {% else %}
+                  not_exist
+                {% endif %}
+
+                {% if post.data.emailLayout %}
+                  email
+                {% else %}
+                  site
+                {% endif %}
+              ">
                 <div class="layouts-page-card__image">
                   <div class="layouts-page-card__badges">
                     {% for item in post.data.levels %}
@@ -119,6 +258,21 @@
                         {{ item }}
                       </a>
                     {% endfor %}
+                    {% if post.data.author %}
+                      <a class="badge badge--gray">
+                        Авторский
+                      </a>
+                    {% endif %}
+                    {% if post.data.emailLayout %}
+                      <a class="badge badge--gray">
+                        email
+                      </a>
+                    {% endif %}
+                    {% if post.data.language %}
+                      <a class="badge badge--gray">
+                        {{ post.data.language }}
+                      </a>
+                    {% endif %}
                   </div>
                   <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
                 </div>

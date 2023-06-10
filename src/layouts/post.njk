@@ -28,6 +28,36 @@
           <div class="post__content">
             {{ content | safe }}
           </div>
+          {% if sources %}
+            <div class="post-sources">
+              Исходники по данной теме:
+              <a
+                href="{{ sources }}"
+                target="_blank" class="post-sources__link"><svg>
+                  <use xlink:href="/assets/img/sprite.svg#link"></use>
+                </svg> github</a>
+            </div>
+          {% endif %}
+          <div class="post-links">
+            {%- set nextPost = collections.categoryList[categories[0]] | getNextCollectionItem(page) %}
+            {%- if nextPost %}
+              <a href="{{ nextPost.url | url }}" class="post-links__item post-links__item--prev">
+                <svg>
+                  <use xlink:href="/assets/img/sprite.svg#left-arrow"></use>
+                </svg>
+                предыдущий пост
+              </a>
+            {% endif %}
+            {%- set previousPost = collections.categoryList[categories[0]] | getPreviousCollectionItem(page) %}
+            {%- if previousPost %}
+              <a href="{{ previousPost.url | url }}" class="post-links__item post-links__item--next">
+                следующий пост
+                <svg>
+                  <use xlink:href="/assets/img/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            {% endif %}
+          </div>
         </article>
         <aside class="post-aside">
           <div class="post-info">
