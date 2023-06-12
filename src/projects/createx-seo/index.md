@@ -15,7 +15,7 @@ figmaLink: "https://www.figma.com/file/ZWrIjvWmYaHzfck8Cl4i8B/Free-%235.-SEO?typ
 previewLink: ""
 previewAuthor: ""
 skills: [
-  "Сетки (flex или grid)", "Слайдеры", "Декоративные элементы", "Фориы"
+  "Сетки (flex или grid)", "Слайдеры", "Декоративные элементы", "Формы"
 ]
 props: [
   'Многостраничный'
