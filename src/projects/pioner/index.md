@@ -1,0 +1,27 @@
+---
+date: 2023-06-15
+title: "Пионер"
+description: "Сайт о российском заводе"
+cover: "img/cover.jpg"
+cover2x: "img/cover_2x.jpg"
+mainPageImage: "img/main-page-image.jpg"
+mainPageImage2x: "img/main-page-image_2x.jpg"
+image: "img/inner-image.jpg"
+image2x: "img/inner-image_2x.jpg"
+author: ""
+levels:
+  - easy
+figmaLink: "https://www.figma.com/file/rTIAAgDAufAPl61AWjYlrb/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80?type=design&node-id=0%3A1&t=b3RT1bbZuVZzaOfN-1"
+previewLink: ""
+previewAuthor: ""
+skills: [
+  "Сетки (flex или grid)"
+]
+props: [
+  'Одностраничный'
+]
+articles: ""
+easyText: ""
+language: "ru"
+layout: "project.njk"
+---
