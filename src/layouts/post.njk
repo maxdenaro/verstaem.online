@@ -26,6 +26,16 @@
             </div>
           </div>
           <div class="post__content">
+            <details class="mobile-expanded mobile-expanded--post">
+              <summary class="mobile-expanded__caption">
+                <svg class="">
+                  <use xlink:href="/assets/img/sprite.svg#list"></use>
+                </svg>
+                Содержание
+              </summary>
+              <ul class="list-reset post-info__list-mob">
+              </ul>
+            </details>
             {{ content | safe }}
           </div>
           {% if sources %}

@@ -55,7 +55,12 @@
     <header class="header">
       <div class="container header__container">
         <a href="/" class="logo">верстаем.онлайн</a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+          <span class="burger__line"></span>
+          <span class="burger__bg"></span>
+        </button>
         {% include 'nav.njk' %}
         <a href="/projects/" class="btn header__btn">Прокачать верстку</a>
       </div>
+      <div class="overlay" data-menu-overlay></div>
     </header>

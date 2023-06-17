@@ -25,7 +25,7 @@
     <div class="container grid">
       <form action="#" class="blog-nav__form"><input type="search" class="blog-nav__input" placeholder="Поиск...">
       </form>
-      <ul class="list-reset blog-nav__list">
+      <ul class="list-reset blog-nav__list blog-nav__list--desktop">
         <li class="blog-nav__item">
             <a href="/blog/" class="blog-nav__link {% if "/blog/" == pagUrl %} blog-nav__link--active {% endif %}">
               Показать все
@@ -39,6 +39,28 @@
           </li>
         {%- endfor %}
       </ul>
+      <details class="mobile-expanded mobile-expanded--blog">
+      <summary class="mobile-expanded__caption">
+        <svg class="">
+          <use xlink:href="/assets/img/sprite.svg#list"></use>
+        </svg>
+        Категории
+      </summary>
+      <ul class="list-reset blog-nav__list blog-nav__list--mobile">
+        <li class="blog-nav__item">
+            <a href="/blog/" class="blog-nav__link {% if "/blog/" == pagUrl %} blog-nav__link--active {% endif %}">
+              Показать все
+            </a>
+          </li>
+        {% for tag, val in collections.categoryList -%}
+          <li class="blog-nav__item">
+            <a href="/blog/{{ tag }}" class="blog-nav__link {% if tag in pagUrl %} blog-nav__link--active {% endif %}">
+              {{ tag | changeTextInRussian }}
+            </a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </details>
     </div>
   </div>
   <section class="blog-content section-offset">
