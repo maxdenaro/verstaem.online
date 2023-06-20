@@ -37,54 +37,54 @@
     <meta property="og:title" content="{{ title }} &mdash; {{ metadata.title }}">
     <meta property="og:description" content="{{ descr }}">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }} &mdash; {{ metadata.title }}">
     <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/projects/easy/" == pagUrl %}
-    <meta name="description" content="{{ descr }}">
-    <meta itemprop="description" content="{{ descr }}">
+    <meta name="description" content="Выбирай легкий макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
+    <meta itemprop="description" content="Выбирай легкий макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Простые макеты для верстки Figma &mdash; {{ metadata.title }}">
-    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:description" content="Выбирай легкий макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Простые макеты для верстки Figma &mdash; {{ metadata.title }}">
-    <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:description" content="Выбирай легкий макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/projects/normal/" == pagUrl %}
-    <meta name="description" content="{{ descr }}">
-    <meta itemprop="description" content="{{ descr }}">
+    <meta name="description" content="Выбирай средний по сложности макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
+    <meta itemprop="description" content="Выбирай средний по сложности макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Макеты средней сложности для верстки Figma &mdash; {{ metadata.title }}">
-    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:description" content="Выбирай средний по сложности макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Макеты средней сложности для верстки Figma &mdash; {{ metadata.title }}">
-    <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:description" content="Выбирай средний по сложности макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/projects/hard/" == pagUrl %}
-    <meta name="description" content="{{ descr }}">
-    <meta itemprop="description" content="{{ descr }}">
+    <meta name="description" content="Выбирай сложный макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
+    <meta itemprop="description" content="Выбирай сложный макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Сложные макеты для верстки Figma &mdash; {{ metadata.title }}">
-    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:description" content="Выбирай сложный макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Сложные макеты для верстки Figma &mdash; {{ metadata.title }}">
-    <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:description" content="Выбирай сложный макет на свой вкус, верстай и развивайся. Можно также проверить себя с помощью live-превью">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/tasks/" == pagUrl %}
     <meta name="description" content="{{ descr }}">
@@ -93,54 +93,124 @@
     <meta property="og:title" content="{{ title }} &mdash; {{ metadata.title }}">
     <meta property="og:description" content="{{ descr }}">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }} &mdash; {{ metadata.title }}">
     <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/tasks/easy/" == pagUrl %}
-    <meta name="description" content="{{ descr }}">
-    <meta itemprop="description" content="{{ descr }}">
+    <meta name="description" content="Выбирай легкую задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
+    <meta itemprop="description" content="Выбирай легкую задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Простые задания для развития верстки &mdash; {{ metadata.title }}">
-    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:description" content="Выбирай легкую задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Простые задания для развития верстки &mdash; {{ metadata.title }}">
-    <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:description" content="Выбирай легкую задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/tasks/normal/" == pagUrl %}
-    <meta name="description" content="{{ descr }}">
-    <meta itemprop="description" content="{{ descr }}">
+    <meta name="description" content="Выбирай среднюю по сложности задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
+    <meta itemprop="description" content="Выбирай среднюю по сложности задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Задания средней сложности для развития верстки &mdash; {{ metadata.title }}">
-    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:description" content="Выбирай среднюю по сложности задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Задания средней сложности для развития верстки &mdash; {{ metadata.title }}">
-    <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:description" content="Выбирай среднюю по сложности задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/tasks/hard/" == pagUrl %}
-    <meta name="description" content="{{ descr }}">
-    <meta itemprop="description" content="{{ descr }}">
+    <meta name="description" content="Выбирай сложную задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
+    <meta itemprop="description" content="Выбирай сложную задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Сложные задания для развития верстки &mdash; {{ metadata.title }}">
-    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:description" content="Выбирай сложную задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Сложные задания для развития верстки &mdash; {{ metadata.title }}">
+    <meta name="twitter:description" content="Выбирай сложную задачку на свой вкус, верстай и развивайся. Можно проверить себя, посмотрев готовое решение">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% elif "/people/" == pagUrl %}
+    <meta name="description" content="{{ descr }}">
+    <meta itemprop="description" content="{{ descr }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
     <meta name="twitter:description" content="{{ descr }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% elif "/policy/" == pagUrl %}
+    <meta name="description" content="{{ descr }}">
+    <meta itemprop="description" content="{{ descr }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ descr }}">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% elif "/cookie/" == pagUrl %}
+    <meta name="description" content="{{ descr }}">
+    <meta itemprop="description" content="{{ descr }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ descr }}">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% elif "/refusal/" == pagUrl %}
+    <meta name="description" content="{{ descr }}">
+    <meta itemprop="description" content="{{ descr }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ descr }}">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% elif "/contacts/" == pagUrl %}
+    <meta name="description" content="{{ descr }}">
+    <meta itemprop="description" content="{{ descr }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ descr }}">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% else %}
     <meta name="description" content="{{ metadata.description }}">
@@ -149,12 +219,12 @@
     <meta property="og:title" content="{{ title }} &mdash; {{ metadata.title }}">
     <meta property="og:description" content="{{ descr }}">
     <meta property="og:site_name" content="{{ metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}/">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }} &mdash; {{ metadata.title }}">
     <meta name="twitter:description" content="{{ metadata.description }}">
-    <meta name="twitter:site" content="{{ metadata.url }}/">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% endif %}
 

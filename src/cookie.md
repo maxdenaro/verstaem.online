@@ -1,5 +1,6 @@
 ---
 title: "Информация о cookie"
+descr: "Информация о cookie сайта Верстаем.онлайн"
 layout: "docs.njk"
 ---
 
