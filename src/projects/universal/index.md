@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/BuIczXxASo8GMwvGTnw4Bh/Universal?type=design&node-id=0%3A1&t=9Fc5X5cpspbf3m0D-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/universal/"
+previewAuthor: "anna_samoylenko"
 skills: [
   "Сетки (grid)"
 ]

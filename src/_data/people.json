@@ -56,5 +56,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "anna_samoylenko",
+    "name": "Анна Самойленко",
+    "pseudonim": "Bargamotova",
+    "bio": "Страстный любитель сложных задач, завоеватель цифровых миров. Приверженец креативности, многофункциональности и красоты в создании веб-сайтов.",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
