@@ -22,7 +22,7 @@
   {% set lastWeekProjects = collections.projects | getByLastWeek %}
   {% set lastWeekPosts = collections.blog | getByLastWeek %}
   {% set lastWeekTasks = collections.tasks | getByLastWeek %}
-  {% if lastWeekProjects or lastWeekPosts or lastWeekTasks  %}
+  {% if lastWeekProjects.length or lastWeekPosts.length or lastWeekTasks.length  %}
     <div class="last-actions">
       <button class="btn-reset last-actions__btn">
         <svg>

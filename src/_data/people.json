@@ -66,5 +66,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "ivan_khokhryakov",
+    "name": "Иван Хохряков",
+    "pseudonim": "",
+    "bio": "Фронтенд-разработчик. Фанат компьютерных технологии .\"Не умею, не хочу, не знаю\" - все эти слова не про меня.",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

@@ -236,6 +236,13 @@
                         {{ post.data.language }}
                       </a>
                     {% endif %}
+                    {% if post.data.previewLink %}
+                      <a class="badge badge--gray" title="С превью">
+                        <svg class="eye-icon">
+                          <use xlink:href="/assets/img/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    {% endif %}
                   </div>
                   <img loading="lazy" src="{{ post.url }}{{ post.data.image }}" class="image" alt="{{ post.data.title }}">
                 </div>
@@ -314,6 +321,13 @@
                     {% if post.data.language %}
                       <a class="badge badge--gray">
                         {{ post.data.language }}
+                      </a>
+                    {% endif %}
+                    {% if post.data.previewLink %}
+                      <a class="badge badge--gray" title="С превью">
+                        <svg class="eye-icon">
+                          <use xlink:href="/assets/img/sprite.svg#eye"></use>
+                        </svg>
                       </a>
                     {% endif %}
                   </div>

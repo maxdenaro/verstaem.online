@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/t3nWfvHyMK3VVuMN2n0ZUq/Premium-Car-Blog-Template?type=design&node-id=0%3A1&t=7facliQIcq0897FD-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/premium-car/"
+previewAuthor: "ivan_khokhryakov"
 skills: [
   "Сетки (flex или grid)", "Формы"
 ]
