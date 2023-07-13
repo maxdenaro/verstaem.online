@@ -12,8 +12,8 @@ author: ""
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/COFJnHB1lL47wFuw42t1Tx/Revo?type=design&node-id=0%3A1&t=UcE8nzia6sDKQmcl-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/revo/"
+previewAuthor: "anna_samoylenko"
 skills: [
   "Сетки (flex или grid)", "Слайдеры", "Декоративные элементы"
 ]
