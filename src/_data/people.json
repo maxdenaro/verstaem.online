@@ -76,5 +76,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "artyom_chemnakov",
+    "name": "Артем Чемнаков",
+    "pseudonim": "Acollit",
+    "bio": "Frontend разработчик, интересны креативные проекты.",
+    "social": "https://github.com/Acollit",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

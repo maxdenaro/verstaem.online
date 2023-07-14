@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/QbwdN388rbZeolob6d9kQO/MNTN---Landing-Page-(Community)?type=design&node-id=0%3A1&t=1ctgOUoTWb6DDNaG-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/mntn/"
+previewAuthor: "artyom_chemnakov"
 skills: [
   "Сетки (flex или grid)", "Слайдеры", "Декоративные элементы"
 ]
