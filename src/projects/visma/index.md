@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/QcINVzCT9t4YAtNoxQaKid/Visma?type=design&node-id=0%3A1&mode=design&t=mTtr2VDapbq7AVvh-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/visma/"
+previewAuthor: "vyacheslav_nesterenko"
 skills: [
   "Сетки (flex или grid)", "Формы"
 ]
