@@ -39,7 +39,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pageAssetsPlugin, {
     mode: "directory",
-    postsMatching: ["src/blog/**/*.md", "src/projects/**/*.md", "src/experts/**/*.md", "src/tasks/**/*.md"],
+    postsMatching: ["src/blog/**/*.md", "src/projects/**/*.md", "src/experts/**/*.md", "src/tasks/**/*.md", "src/courses/**/*.md"],
     recursive: true,
   });
 

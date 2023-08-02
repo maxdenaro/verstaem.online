@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/OrtjNW9auxUNJPtxg08sik/Robin.-W?type=design&node-id=9%3A141&mode=design&t=DCXTjIEgOMKnLG7k-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/robin.w/"
+previewAuthor: "oleg_rozhanskij"
 skills: [
   "Сетки (flex или grid)"
 ]

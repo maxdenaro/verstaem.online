@@ -1,0 +1,173 @@
+{% include 'header-course.njk' %}
+
+<main class="main">
+  <section class="hero hero-course section-offset">
+    <div class="container">
+      <a href="/courses/" class="back-link hero__back-link">
+        <svg class="back-link__icon"
+          width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_26_2872)">
+            <rect width="32" height="32" rx="5" fill="#1F1F1F" />
+            <path
+              d="M22.8307 15.2411H11.7603L15.7776 11.2238L14.7044 10.1506L8.85498 16L14.7044 21.8495L15.7776 20.7763L11.7603 16.759H22.8307V15.2411Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_26_2872">
+              <rect width="32" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        назад к курсам
+      </a>
+      <div class="hero-course__content grid">
+        <div class="hero-course__info">
+          <h1 class="hero-course__title">{{ title }}</h1>
+          <p class="hero-course__descr">{{ descr }}</p>
+          <a href="#price" class="btn hero-course__link">Начать обучение</a>
+        </div>
+        <div class="hero-course__author">
+          <div class="hero-author">
+            <div class="hero-author__image">
+              <img src="{{ author }}" srcset="{{ author2x }} 2x"
+                alt="Максим Васянович" width="40" height="40" loading="lazy">
+              </div>
+            <div class="hero-author__name">{{ authorName }}</div>
+            <p class="hero-author__descr">{{ authorAbout }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-course section-offset">
+    <div class="container">
+      <div class="about-course__content grid">
+        <div class="about-course__about">
+          <div class="about-course__top">
+            <span class="badge badge--dark">Кому подойдет</span>
+            <span class="badge badge--dark">Формат обучения</span>
+          </div>
+          <h2 class="title about-course__title">О курсе</h2>
+          <p class="about-course__descr">{{ forWho }}</p>
+          <p class="about-course__descr">{{ format }}</p>
+        </div>
+        <div class="about-course__skills">
+          <div class="about-course__top">
+            <span class="badge badge--dark">Чему научитесь</span>
+          </div>
+          <h2 class="title about-course__title">Вы освоите</h2>
+          <ul class="list-reset course-skills">
+            {% for item in skills %}
+              <li class="course-skills__item">
+                <h3 class="course-skills__title">{{ item.title }}</h3>
+                <p class="course-skills__descr">{{ item.description }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="course-program section-offset">
+    <div class="container">
+      <h2 class="title course-program__title">Программа</h2>
+      <ul class="list-reset course-program__items">
+        {% for item in program %}
+          <li class="course-program__item accordion">
+            <button class="btn-reset accordion__control"
+              aria-expanded="false">
+              <span class="accordion__title">{{ item.title }}</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__content" aria-hidden="true">
+              <div class="accordion__time">{{ item.time }}</div>
+              <ol class="accordion__lessons">
+                {% for item in item.lessons %}
+                  <li class="accordion__lessons-item">{{ item }}</li>
+                {% endfor %}
+              </ol>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% if testimonials.length %}
+    <section class="testimonials-course section-offset">
+      <div class="container">
+        <h2 class="title">Отзывы</h2>
+        <ul class="list-reset testimonials-course__list grid">
+          <li class="testimonials-course__item">
+            <div class="testimonials-course__top"><img src="img/course-author.png"
+                srcset="img/course-author_2x.png 2x" alt="Максим Васянович" width="40" height="40" loading="lazy">
+              <div class="testimonials-course__name">Максим Васянович</div>
+            </div>
+            <p class="testimonials-course__descr">Идейные соображения высшего порядка, а также консультация с широким
+              активом требуют определения и уточнения существенных финансовых и административных условий. Значимость
+              этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение
+              дальнейших направлений развития.</p>
+          </li>
+          <li class="testimonials-course__item">
+            <div class="testimonials-course__top"><img src="img/course-author.png"
+                srcset="img/course-author_2x.png 2x" alt="Максим Васянович" width="40" height="40" loading="lazy">
+              <div class="testimonials-course__name">Максим Васянович</div>
+            </div>
+            <p class="testimonials-course__descr">Идейные соображения высшего порядка, а также консультация с широким
+              активом требуют определения и уточнения существенных финансовых и административных условий. Значимость
+              этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение
+              дальнейших направлений развития.</p>
+          </li>
+          <li class="testimonials-course__item">
+            <div class="testimonials-course__top"><img src="img/course-author.png"
+                srcset="img/course-author_2x.png 2x" alt="Максим Васянович" width="40" height="40" loading="lazy">
+              <div class="testimonials-course__name">Максим Васянович</div>
+            </div>
+            <p class="testimonials-course__descr">Идейные соображения высшего порядка, а также консультация с широким
+              активом требуют определения и уточнения существенных финансовых и административных условий. Значимость
+              этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение
+              дальнейших направлений развития.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  {% endif %}
+
+  <section class="course-price section-offset" id="price">
+    <div class="container">
+      <div class="course-price__content">
+        <h2 class="title course-price__title">Запишитесь или получите консультацию</h2>
+        <div class="course-price__info">
+          <div class="price">
+            <div class="price__old">4 999 ₽</div>
+            <div class="price__current">3 999 ₽</div>
+          </div>
+          <p class="course-price__descr">Напишите мне в личные сообщения, чтобы начать обучение
+          </p>
+        </div><a href="{{ connectLink }}" target="_blank" class="btn btn--big course-price__link">Начать обучение</a>
+      </div>
+    </div>
+  </section>
+  <section class="faq section-offset">
+    <div class="container grid">
+      <div class="col">
+        <h2 class="title faq__title">FAQ</h2>
+      </div>
+      <div class="col">
+        <ul class="list-reset faq__list">
+          {% for item in faq %}
+            <li class="faq__item accordion">
+              <button class="btn-reset accordion__control" aria-expanded="false">
+                <span class="accordion__title">{{ item.title }}</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>{{ item.description }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}

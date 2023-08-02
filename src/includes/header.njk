@@ -156,6 +156,20 @@
     <meta name="twitter:description" content="{{ descr }}">
     <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
     <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+  {% elif "/courses/" == pagUrl %}
+    <meta name="description" content="{{ descr }}">
+    <meta itemprop="description" content="{{ descr }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ descr }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ descr }}">
+    <meta name="twitter:site" content="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+    <meta name="twitter:image" content="{{ metadata.url }}/assets/img/pstshrng.jpg">
   {% elif "/policy/" == pagUrl %}
     <meta name="description" content="{{ descr }}">
     <meta itemprop="description" content="{{ descr }}">

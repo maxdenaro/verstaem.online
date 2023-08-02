@@ -96,5 +96,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+	{
+    "key": "oleg_rozhanskij",
+    "name": "Олег Рожанский",
+    "pseudonim": "",
+    "bio": "",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

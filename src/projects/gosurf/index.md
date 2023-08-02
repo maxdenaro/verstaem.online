@@ -12,8 +12,8 @@ author: ""
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/Dh3oxsX5naFOuXj2f7a6gy/Go-Surf?type=design&node-id=0%3A1&t=YRHfYkRZqlPqcvVJ-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/gosurf/"
+previewAuthor: "artyom_chemnakov"
 skills: [
   "Сетки (grid)", "Декоративные элементы", "Сложная сетка"
 ]

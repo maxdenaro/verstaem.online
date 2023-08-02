@@ -1,0 +1,42 @@
+{% include 'header.njk' %}
+
+<main class="main">
+  {% set pagUrl = page.url %}
+  <section class="hero hero-courses hero--layouts section-offset">
+    <div class="container">
+      <h1 class="hero__title">
+        {{ h1 }}
+        <span style="color: var(--second-color);">
+          ({{ collections.courses |  length }})
+        </span>
+      </h1>
+    </div>
+  </section>
+  <section class="layouts-page-list section-offset">
+    <div class="container">
+      <h2 class="layouts-page-list__title visually-hidden">Курсы</h2>
+      <ul class="list-reset layouts-page-list__list grid">
+        {% for post in collections.courses | reverse -%}
+          <li class="layouts-page-list__item">
+            <article class="layouts-page-card">
+              <div class="layouts-page-card__image">
+                <div class="layouts-page-card__badges">
+                  {% for item in post.data.themes %}
+                    <a class="badge badge--gray">
+                      {{ item }}
+                    </a>
+                  {% endfor %}
+                </div>
+                <img loading="lazy" src="{{ post.url }}{{ post.data.cover }}" class="image" srcset="{{ post.url }}{{ post.data.cover2x }} 2x" alt="{{ post.data.title }}">
+              </div>
+              <h3 class="layouts-page-card__title"><a href="{{ post.url }}" class="layouts-page-card__link">{{ post.data.title }}</a></h3>
+              <p class="layouts-page-card__descr">{{ post.data.minidescr }}</p>
+            </article>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>
+
+{% include 'footer.njk' %}
