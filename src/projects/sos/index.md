@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/ecQV1zkIU9eFaSIpDSEPi3/SOS?type=design&node-id=0%3A1&t=Qripy8nulDiPp88H-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/sos/"
+previewAuthor: "vaan_ogannisyan"
 skills: [
   "Сетки (flex или grid)", "Выпадающее меню"
 ]

@@ -106,5 +106,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+	{
+    "key": "vaan_ogannisyan",
+    "name": "Ваан Оганнисян",
+    "pseudonim": "",
+    "bio": "Фронтенд разработчик, есть опыт в преподавании",
+    "social": "https://www.facebook.com/vahan.hovanisyan.73",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
