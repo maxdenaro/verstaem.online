@@ -12,7 +12,8 @@ author: ""
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/jHDVsiVR8JBpkMsYehKCEj/Eatly?type=design&node-id=1%3A11265&t=6kExXzDpP8rpcUAN-1"
-previewLink: ""
+previewLink: "https://live.verstaem.online/eatly/"
+previewAuthor: "vaagn_avetisyan"
 skills: [
   "Сетка (flex или grid)", "Анимация", "Элементы формы", "Декоративные элементы", "Псевдоэлементы"
 ]

@@ -116,5 +116,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+	{
+    "key": "vaagn_avetisyan",
+    "name": "Ваагн Аветисян",
+    "pseudonim": "",
+    "bio": "Фронтендер, любитель интересных и сложных проектов",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
