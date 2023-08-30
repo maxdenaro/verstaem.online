@@ -22,48 +22,52 @@
   {% set lastWeekProjects = collections.projects | getByLastWeek %}
   {% set lastWeekPosts = collections.blog | getByLastWeek %}
   {% set lastWeekTasks = collections.tasks | getByLastWeek %}
-  {% if lastWeekProjects or lastWeekPosts or lastWeekTasks  %}
-    <div class="last-actions">
-      <button class="btn-reset last-actions__btn">
-        <svg>
-          <use xlink:href="/assets/img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-      <h2 class="last-actions__title">Новое за неделю</h2>
-      <div class="last-actions__content">
-        {% if lastWeekProjects.length %}
-          <h3 class="last-actions__subtitle">Макеты</h3>
-          <ul class="list-reset last-actions__list">
-            {% for post in lastWeekProjects %}
-              <li class="last-actions__item">
-                <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        {% if lastWeekPosts.length %}
-          <h3 class="last-actions__subtitle">Блог</h3>
-          <ul class="list-reset last-actions__list">
-            {% for post in lastWeekPosts %}
-              <li class="last-actions__item">
-                <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        {% if lastWeekTasks.length %}
-          <h3 class="last-actions__subtitle">Задачи</h3>
-          <ul class="list-reset last-actions__list">
-            {% for post in lastWeekTasks %}
-              <li class="last-actions__item">
-                <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
+  <div class="last-actions
+
+    {% if lastWeekProjects or lastWeekPosts or lastWeekTasks %}
+      last-actions--visible
+    {% endif %}
+
+  ">
+    <button class="btn-reset last-actions__btn">
+      <svg>
+        <use xlink:href="/assets/img/sprite.svg#cross"></use>
+      </svg>
+    </button>
+    <h2 class="last-actions__title">Новое за неделю</h2>
+    <div class="last-actions__content">
+      {% if lastWeekProjects.length %}
+        <h3 class="last-actions__subtitle">Макеты</h3>
+        <ul class="list-reset last-actions__list">
+          {% for post in lastWeekProjects %}
+            <li class="last-actions__item">
+              <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if lastWeekPosts.length %}
+        <h3 class="last-actions__subtitle">Блог</h3>
+        <ul class="list-reset last-actions__list">
+          {% for post in lastWeekPosts %}
+            <li class="last-actions__item">
+              <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if lastWeekTasks.length %}
+        <h3 class="last-actions__subtitle">Задачи</h3>
+        <ul class="list-reset last-actions__list">
+          {% for post in lastWeekTasks %}
+            <li class="last-actions__item">
+              <a href="{{ post.url }}" class="last-actions__link">{{ post.data.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
-  {% endif %}
+  </div>
   <script>
     const year = new Date().getFullYear();
     document.querySelector('.year').textContent = year;
