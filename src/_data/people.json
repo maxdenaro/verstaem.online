@@ -126,5 +126,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "evgenij_martynyuk",
+    "name": "Евгений Мартынюк",
+    "pseudonim": "",
+    "bio": "Frontend-разработчик, увлечен созданием интерфейсов, которые сочетают в себе стиль и удобство использования",
+    "social": "https://t.me/martynyuk21",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

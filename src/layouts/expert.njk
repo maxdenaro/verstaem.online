@@ -13,6 +13,9 @@
       </div>
       <div class="expert-content__info">
         <p class="expert-content__descr">{{author.bio}}</p>
+        {% if author.social %}
+          <a class="expert-content__link connect-link" href="{{author.social}}" target="_blank">Связаться</a>
+        {% endif %}
         <div class="expert-content__contribution">
           {% if author.role2 %}
             <div class="expert-content__col">
