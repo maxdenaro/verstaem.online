@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/h8noBnTMtXKEm5Prwm59UN/Moon-River?type=design&node-id=0%3A1&mode=design&t=WRnFGzP3cxBEa4m5-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/moon-river/"
+previewAuthor: "anna_samoylenko"
 skills: [
   "Сетки (grid)", "Формы", "Слайдеры"
 ]
