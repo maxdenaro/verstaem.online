@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/nRTqzGdxFS8Fd1IDKRVAwi/Blanko?type=design&node-id=0%3A1&t=5q8IJDd7QH3qAQr7-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/blanko/"
+previewAuthor: "shant_margaryan"
 skills: [
   "Сетки (flex или grid)"
 ]

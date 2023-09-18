@@ -136,5 +136,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "shant_margaryan",
+    "name": "Шант Маргарян",
+    "pseudonim": "",
+    "bio": "Фронтенд разработчик, люблю решать сложные задачи",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/tGrUfiGxJo6Ahku54c7l5f/Fashion-Blog-Template?type=design&node-id=0%3A1&mode=design&t=AptOO8MnXMMcQ6dN-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/fashion/"
+previewAuthor: "anna_samoylenko"
 skills: [
   "Сетки (grid)"
 ]
