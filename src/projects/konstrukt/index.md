@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/zR1XfguUZ5wWWOy6ah30Xq/konstruct-template?type=design&node-id=0%3A2&mode=design&t=0Ow8jk54fwBeLXJ6-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/konstrukt/"
+previewAuthor: "shant_margaryan"
 skills: [
   "Сетки (grid)", "Формы"
 ]
