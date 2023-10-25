@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/urwspixMrGiTn8KalJcK9r/Hostus-Pocus?type=design&node-id=0%3A1&t=xyfrPEIFpCSHNzTv-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/hostus-poctus/"
+previewAuthor: "shant_margaryan"
 skills: [
   "Сетки (flex или grid)"
 ]

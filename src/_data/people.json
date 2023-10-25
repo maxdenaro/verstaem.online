@@ -146,5 +146,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+	{
+    "key": "fedutik_tatyana",
+    "name": "Федутик Татьяна",
+    "pseudonim": "",
+    "bio": "Frontend-разработчик. Меня привлекает и вдохновляет «магия» превращения макета в живой сайт",
+    "social": "",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

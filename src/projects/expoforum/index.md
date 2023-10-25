@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/OjzqIsvOgAqWWHY1YfdIle/Expoforum?type=design&node-id=0%3A1&t=6IIGnTZGStb0GM5i-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/expoforum/"
+previewAuthor: "fedutik_tatyana"
 skills: [
   "Сетки (flex или grid)"
 ]
