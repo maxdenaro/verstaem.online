@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/3FTKVOAbtrMgJvBvZGPSP1/Lemon?type=design&node-id=0%3A1&t=bkHgFD6kRYDuuChP-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/lemon/"
+previewAuthor: "tatyana_fedutik"
 skills: [
   "Сетки (flex или grid)"
 ]

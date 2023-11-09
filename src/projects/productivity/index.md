@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/NSc5sUQ6ESUIQFs7lWoJSG/productivity?type=design&node-id=0%3A1&t=6U8h8nVWZrFqzy7x-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/productivity/"
+previewAuthor: "vyacheslav_nesterenko"
 skills: [
   "Сетки (flex или grid)", "Слайдеры"
 ]
