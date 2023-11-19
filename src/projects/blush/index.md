@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/GDDWld6lWa8alz0wHo7SVJ/Blush?type=design&node-id=52%3A15399&t=O6xLhfUloeRSoMTi-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/blush/"
+previewAuthor: "tatyana_fedutik"
 skills: [
   "Email-верстка"
 ]
