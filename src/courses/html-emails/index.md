@@ -93,7 +93,14 @@ program: [
   },
 ]
 connectLink: "https://t.me/maxdenaro"
-testimonials: []
+testimonials: [
+  {
+    name: "Савелий",
+    description: "Прошел твой курс по HTML-письмам. Спасибо большое за него, было очень информативно и полезно, давно ждал этот курс от тебя.
+    Надеюсь, в будущем будут еще курсы, например, курс по JS или WP",
+    avatar: "saveliy.jpg",
+  }
+]
 faq: [
   {
     title: "Можно ли начать совсем с нуля?",

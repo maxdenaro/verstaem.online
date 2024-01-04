@@ -156,5 +156,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+	{
+    "key": "dmitrij_anosov",
+    "name": "Дмитрий Аносов",
+    "pseudonim": "",
+    "bio": "Frontend разработчик, нравится «переводить» макет в код",
+    "social": "https://t.me/Anosau_Dzmitry",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

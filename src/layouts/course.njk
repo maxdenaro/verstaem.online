@@ -96,36 +96,14 @@
       <div class="container">
         <h2 class="title">Отзывы</h2>
         <ul class="list-reset testimonials-course__list grid">
-          <li class="testimonials-course__item">
-            <div class="testimonials-course__top"><img src="img/course-author.png"
-                srcset="img/course-author_2x.png 2x" alt="Максим Васянович" width="40" height="40" loading="lazy">
-              <div class="testimonials-course__name">Максим Васянович</div>
-            </div>
-            <p class="testimonials-course__descr">Идейные соображения высшего порядка, а также консультация с широким
-              активом требуют определения и уточнения существенных финансовых и административных условий. Значимость
-              этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение
-              дальнейших направлений развития.</p>
-          </li>
-          <li class="testimonials-course__item">
-            <div class="testimonials-course__top"><img src="img/course-author.png"
-                srcset="img/course-author_2x.png 2x" alt="Максим Васянович" width="40" height="40" loading="lazy">
-              <div class="testimonials-course__name">Максим Васянович</div>
-            </div>
-            <p class="testimonials-course__descr">Идейные соображения высшего порядка, а также консультация с широким
-              активом требуют определения и уточнения существенных финансовых и административных условий. Значимость
-              этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение
-              дальнейших направлений развития.</p>
-          </li>
-          <li class="testimonials-course__item">
-            <div class="testimonials-course__top"><img src="img/course-author.png"
-                srcset="img/course-author_2x.png 2x" alt="Максим Васянович" width="40" height="40" loading="lazy">
-              <div class="testimonials-course__name">Максим Васянович</div>
-            </div>
-            <p class="testimonials-course__descr">Идейные соображения высшего порядка, а также консультация с широким
-              активом требуют определения и уточнения существенных финансовых и административных условий. Значимость
-              этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение
-              дальнейших направлений развития.</p>
-          </li>
+          {% for item in testimonials %}
+            <li class="testimonials-course__item">
+              <div class="testimonials-course__top"><img src="/assets/img/testimonials/{{item.avatar}}" alt="Максим Васянович" width="40" height="40" loading="lazy">
+                <div class="testimonials-course__name">{{item.name}}</div>
+              </div>
+              <p class="testimonials-course__descr">{{item.description}}</p>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </section>

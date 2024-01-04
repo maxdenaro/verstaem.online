@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/fn7TA4MCrTj7Ad2dAPja7Q/Freebie-Agency?type=design&node-id=0%3A1&t=4NX4qqv9SZTjRzbW-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/freebie/"
+previewAuthor: "dmitrij_anosov"
 skills: [
   "Сетки (flex или grid)", "Слайдеры"
 ]

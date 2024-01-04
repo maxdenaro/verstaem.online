@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/file/bSxMNm0CRXFcHQzke8C8W5/ROBO-SCHOOL?type=design&node-id=0%3A1&t=CitCwIZKBPfoUHLA-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/robo-school/"
+previewAuthor: "tatyana_fedutik"
 skills: [
   "Сетки (flex или grid)", "Слайдеры"
 ]
