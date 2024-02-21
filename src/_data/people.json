@@ -166,5 +166,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "kirill_walker",
+    "name": "Kirill Walker",
+    "pseudonim": "",
+    "bio": "Frontend разработчик. Люблю создавать сайты, развиваюсь в web-направлении.",
+    "social": "https://t.me/wk1r1ll01",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]

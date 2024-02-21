@@ -12,8 +12,8 @@ author: ""
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/ZWrIjvWmYaHzfck8Cl4i8B/Free-%235.-SEO?type=design&node-id=0%3A1&t=5aSjdcz72GQa9EwG-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/createx-seo/"
+previewAuthor: "kirill_walker"
 skills: [
   "Сетки (flex или grid)", "Слайдеры", "Декоративные элементы", "Формы"
 ]
