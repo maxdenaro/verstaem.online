@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/NKwVj6xlfbhCXZScyyvS1n/Tweakful?type=design&node-id=115%3A295&mode=design&t=dSwCeydWssmHi6FA-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/tweakful/"
+previewAuthor: "aleksandr-vypriczkij"
 skills: [
   "Сетки (grid)", "Форма"
 ]

@@ -176,5 +176,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "aleksandr-vypriczkij",
+    "name": "Александр Выприцкий",
+    "pseudonim": "",
+    "bio": "Frontend-разработчик. Нравится создавать сложные и современные сайты сочетающие в себе функциональность, простоту в использовании и доступность.",
+    "social": "https://t.me/vep_web",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
