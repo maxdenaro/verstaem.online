@@ -12,8 +12,8 @@ author: ""
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/MMsgDyxk277EUjdWH65XQ2/Avion?type=design&node-id=1%3A3&mode=design&t=VsT90a01MAXTCogn-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/avion/"
+previewAuthor: "aleksandr-vypriczkij"
 skills: [
   "Сетки (grid)", "Формы", "Слайдеры"
 ]
