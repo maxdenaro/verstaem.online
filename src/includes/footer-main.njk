@@ -24,7 +24,7 @@
   {% set lastWeekTasks = collections.tasks | getByLastWeek %}
   <div class="last-actions
 
-    {% if lastWeekProjects or lastWeekPosts or lastWeekTasks %}
+    {% if lastWeekProjects.length > 0 or lastWeekPosts.length > 0 or lastWeekTasks.length > 0 %}
       last-actions--visible
     {% endif %}
 
