@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/n68LeWiMoz0gDgrW73c89S/Good4me?type=design&node-id=8%3A2&mode=design&t=FSIk7lvt2Ymdg9ED-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/good4me/"
+previewAuthor: "natalya_alimova"
 skills: [
   "Сетки (grid)", "Слайдеры"
 ]
