@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/file/Y5xZWZ6Z6NXsVkcJNt7zNN/AskExperts?type=design&node-id=1%3A5&mode=design&t=BnwSmSCR0rmZ2iJF-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/ask-experts/"
+previewAuthor: "aleksandr-vypriczkij"
 skills: [
   "Сетки (grid)", "Слайдеры"
 ]
