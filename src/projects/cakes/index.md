@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/design/ISuP8wot3x092vZJN1kV2H/Cakes?node-id=0%3A1&t=ZPYgwCgwxcnaBZ15-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/cakes/"
+previewAuthor: "vasilij-kostin"
 skills: [
   "Сетка (flex или grid)", "Элементы формы", "Декоративный фон"
 ]

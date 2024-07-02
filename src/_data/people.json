@@ -186,5 +186,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "vasilij-kostin",
+    "name": "Василий Костин",
+    "pseudonim": "",
+    "bio": "Frontend-разработчик. Люблю оживлять сложные и нестандартные макеты с помощью кода, делая их удобными для использования на всех устройствах.",
+    "social": "https://t.me/cliffffburton",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
