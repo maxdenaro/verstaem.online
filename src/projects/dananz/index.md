@@ -12,8 +12,8 @@ author: ""
 levels:
   - normal
 figmaLink: "https://www.figma.com/design/txd9ZCN80qADFUreB1cQuK/Dananz?node-id=1%3A2&t=iW3bOmhltGJmmmjZ-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/dananz/"
+previewAuthor: "vasilij-kostin"
 skills: [
   "Сетка (flex или grid)", "Анимация", "Элементы формы", "Декоративные элементы", "Псевдоэлементы"
 ]
