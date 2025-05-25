@@ -12,8 +12,8 @@ author: ""
 levels:
   - hard
 figmaLink: "https://www.figma.com/file/DK5zqZOMYPqevEfI5OC7Xk/Molenhauer?type=design&node-id=18%3A38&t=VqxE2NyZyaklPkvl-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/molenhauer/"
+previewAuthor: "denis-gaenko"
 skills: [
   "Сетки (grid)", "Декоративные элементы", "Сложная сетка"
 ]

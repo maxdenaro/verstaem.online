@@ -196,5 +196,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "denis-gaenko",
+    "name": "Денис Гаенко",
+    "pseudonim": "Дэнчик",
+    "bio": "Начинающий фронтендер и верстальщик)",
+    "social": "https://t.me/den4ik_dv",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
