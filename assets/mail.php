@@ -34,7 +34,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'maxgraph23@gmail.com'; // Логин на почте
-  $mail->Password   = 'fsomktmprmtktavv'; // Пароль на почте
+  $mail->Password   = 'sfaxcevzwiwiavvs'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
