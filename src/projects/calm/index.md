@@ -12,8 +12,8 @@ author: ""
 levels:
   - easy
 figmaLink: "https://www.figma.com/design/8Sle6Il1JAZ4SGT1gJo5zD/Calm?node-id=0-1&t=jLxdRjVVqR5rDdvR-1"
-previewLink: ""
-previewAuthor: ""
+previewLink: "https://live.verstaem.online/calm/"
+previewAuthor: "ivan-uglyanicza"
 skills: [
   "Сетка (flex или grid)"
 ]

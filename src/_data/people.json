@@ -206,5 +206,15 @@
     "avatar": "avatar.jpg",
     "role": "expert",
     "role2": ""
+  },
+  {
+    "key": "ivan-uglyanicza",
+    "name": "Иван Угляница",
+    "pseudonim": "DieGOs",
+    "bio": "Full Stack Web Dev, стаж выше среднего. Основное направление WP, SSR, SSG",
+    "social": "https://www.linkedin.com/in/9585999/",
+    "avatar": "avatar.jpg",
+    "role": "expert",
+    "role2": ""
   }
 ]
